@@ -5,8 +5,11 @@
  * Created on 10 de abril de 2016, 11:53
  */
 #include <xc.h>
-//#include "ConfShield1_3.h"
+#ifdef Placa1_3
+#include "ConfShield1_3.h"
+#else
 #include "ConfShield2_1.h"
+#endif
 
 
 #ifndef TECNICA1_H
@@ -63,6 +66,12 @@ void tic_timer1(void);
 
 #ifdef CONFSHIELD2_1_H
 void tic_demo_shield2_1(void);
+
+
+/*funciones varias*/
+
+void demo_shield2_1_INI(void);
+void demo_shield2_1(void);
 #endif
 
 

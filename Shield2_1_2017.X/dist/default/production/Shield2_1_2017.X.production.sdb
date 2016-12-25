@@ -3,14 +3,14 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"170 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield1_3.c
+"170 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield1_3.c
 [e E3809 . `uc
 BotonLibre 0
 BotonEnEspera 1
 BotonDetectado 2
 BotonEsperaLiberarce 3
 ]
-"46 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\teclado.c
+"46 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\teclado.c
 [e E3822 . `uc
 KB_LIBRE 0
 KB_ESPERA 1
@@ -45,15 +45,15 @@ KB_LIBERA 3
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"70 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield1_3.c
+"70 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield1_3.c
 [v _SendDisp SendDisp `(v  1 e 1 0 ]
-"3 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
+"3 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
 [v _PicIni21 PicIni21 `(v  1 e 1 0 ]
-"76 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\EncoderIncremental.c
+"76 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\EncoderIncremental.c
 [v _incrementarEncoder incrementarEncoder `(v  1 e 1 0 ]
 "82
 [v _decrementarEncoder decrementarEncoder `(v  1 e 1 0 ]
-"27 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"27 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _msg2LCD msg2LCD `(v  1 e 1 0 ]
 "37
 [v _char2LCD char2LCD `(v  1 e 1 0 ]
@@ -77,11 +77,11 @@ KB_LIBERA 3
 [v _read_BUSY read_BUSY `(v  1 e 1 0 ]
 "159
 [v _tic_LCD tic_LCD `(v  1 e 1 0 ]
-"22 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
+"23 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"33
+"34
 [v _myISR myISR `II(v  1 e 1 0 ]
-"14 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"14 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _TIMER0_INI TIMER0_INI `(v  1 e 1 0 ]
 "26
 [v _TIMER1_INI TIMER1_INI `(v  1 e 1 0 ]
@@ -103,11 +103,11 @@ KB_LIBERA 3
 [v _CalculoDeFrecuencia CalculoDeFrecuencia `(v  1 e 1 0 ]
 "202
 [v _tic_debounce tic_debounce `(v  1 e 1 0 ]
-"248
+"247
 [v _demo_shield2_1_INI demo_shield2_1_INI `(v  1 e 1 0 ]
-"265
+"264
 [v _demo_shield2_1 demo_shield2_1 `(v  1 e 1 0 ]
-"342
+"341
 [v _tic_demo_shield2_1 tic_demo_shield2_1 `(v  1 e 1 0 ]
 "2280 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f4550.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
@@ -713,12 +713,12 @@ KB_LIBERA 3
 [v _RBPU RBPU `VEb  1 e 0 @32655 ]
 "10022
 [v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
-"81 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield1_3.h
+"81 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield1_3.h
 [v _mux_tout mux_tout `uc  1 e 1 0 ]
 [v _bot_tout bot_tout `uc  1 e 1 0 ]
 "82
 [v _led_tout led_tout `ui  1 e 2 0 ]
-"6 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\EncoderIncremental.c
+"6 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\EncoderIncremental.c
 [v _maximoEncoder maximoEncoder `uc  1 e 1 0 ]
 "7
 [v _minimoEncoder minimoEncoder `uc  1 e 1 0 ]
@@ -728,9 +728,9 @@ KB_LIBERA 3
 [v _encoderTout encoderTout `uc  1 e 1 0 ]
 "10
 [v _flagCanal flagCanal `uc  1 e 1 0 ]
-"18 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"18 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _LCD_tout LCD_tout `us  1 e 2 0 ]
-"26 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\teclado.c
+"26 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\teclado.c
 [v _teclas teclas `C[4][3]uc  1 e 12 0 ]
 "32
 [v _fila fila `uc  1 e 1 0 ]
@@ -738,7 +738,7 @@ KB_LIBERA 3
 "33
 [v _flag_kb flag_kb `VEuc  1 e 1 0 ]
 [v _delay_kb delay_kb `VEuc  1 e 1 0 ]
-"4 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"4 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _MedioPeriodoSet MedioPeriodoSet `ui  1 e 2 0 ]
 "5
 [v _frecuencia frecuencia `ui  1 e 2 0 ]
@@ -752,17 +752,17 @@ KB_LIBERA 3
 [v _MultiplicadorSet MultiplicadorSet `uc  1 e 1 0 ]
 "11
 [v _desplazar_tout desplazar_tout `i  1 e 2 0 ]
-"28 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.h
+"31 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.h
 [v _EstadoDeLosBotones EstadoDeLosBotones `uc  1 e 1 0 ]
-"22 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
+"23 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"31
+"32
 } 0
-"248 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"247 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _demo_shield2_1_INI demo_shield2_1_INI `(v  1 e 1 0 ]
 {
-"264
+"263
 } 0
 "42
 [v _USART_INI USART_INI `(v  1 e 1 0 ]
@@ -779,34 +779,34 @@ KB_LIBERA 3
 {
 "25
 } 0
-"3 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
+"3 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
 [v _PicIni21 PicIni21 `(v  1 e 1 0 ]
 {
 "30
 } 0
-"67 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"67 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _LCD_init LCD_init `(v  1 e 1 0 ]
 {
 "99
 } 0
-"265 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"264 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _demo_shield2_1 demo_shield2_1 `(v  1 e 1 0 ]
 {
-"266
+"265
 [v demo_shield2_1@flag0 flag0 `uc  1 s 1 flag0 ]
 [v demo_shield2_1@flag1 flag1 `uc  1 s 1 flag1 ]
 [v demo_shield2_1@flag2 flag2 `uc  1 s 1 flag2 ]
 [v demo_shield2_1@flag3 flag3 `uc  1 s 1 flag3 ]
 [v demo_shield2_1@PrimeraVez PrimeraVez `uc  1 s 1 PrimeraVez ]
 [v demo_shield2_1@Desplazar Desplazar `uc  1 s 1 Desplazar ]
-"267
+"266
 [v demo_shield2_1@cont cont `uc  1 s 1 cont ]
 [v demo_shield2_1@cont1 cont1 `uc  1 s 1 cont1 ]
 [v demo_shield2_1@cont2 cont2 `uc  1 s 1 cont2 ]
 [v demo_shield2_1@cont3 cont3 `uc  1 s 1 cont3 ]
-"341
+"340
 } 0
-"56 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"56 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _set_CURSOR set_CURSOR `(v  1 e 1 0 ]
 {
 [v set_CURSOR@posi posi `uc  1 a 1 wreg ]
@@ -819,7 +819,7 @@ KB_LIBERA 3
 {
 "53
 } 0
-"126 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"126 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _obtener_ADC8 obtener_ADC8 `(uc  1 e 1 0 ]
 {
 "127
@@ -827,13 +827,13 @@ KB_LIBERA 3
 [v obtener_ADC8@GuardoPorta GuardoPorta `uc  1 a 1 16 ]
 "147
 } 0
-"27 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"27 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _msg2LCD msg2LCD `(v  1 e 1 0 ]
 {
 [v msg2LCD@datos datos `*.25Cuc  1 p 2 18 ]
 "34
 } 0
-"112 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"112 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _informar informar `(v  1 e 1 0 ]
 {
 "114
@@ -851,7 +851,7 @@ KB_LIBERA 3
 [v transmitir@Dato Dato `uc  1 a 1 16 ]
 "125
 } 0
-"44 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"44 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _clear_LCD clear_LCD `(v  1 e 1 0 ]
 {
 "47
@@ -898,7 +898,7 @@ KB_LIBERA 3
 [v ___awdiv@divisor divisor `i  1 p 2 24 ]
 "42
 } 0
-"155 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"155 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _DisminuirPeriodo DisminuirPeriodo `(v  1 e 1 0 ]
 {
 [v DisminuirPeriodo@valor valor `uc  1 a 1 wreg ]
@@ -906,7 +906,7 @@ KB_LIBERA 3
 [v DisminuirPeriodo@valor valor `uc  1 a 1 6 ]
 "160
 } 0
-"61 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"61 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _DesplazarIzquierda DesplazarIzquierda `(v  1 e 1 0 ]
 {
 "64
@@ -936,7 +936,7 @@ KB_LIBERA 3
 [v read_BUSY@aux aux `uc  1 a 1 16 ]
 "156
 } 0
-"149 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"149 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _AumentarPeriodo AumentarPeriodo `(v  1 e 1 0 ]
 {
 [v AumentarPeriodo@valor valor `uc  1 a 1 wreg ]
@@ -972,15 +972,15 @@ KB_LIBERA 3
 [v ___aldiv@divisor divisor `l  1 p 4 20 ]
 "42
 } 0
-"33 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
+"34 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _myISR myISR `II(v  1 e 1 0 ]
 {
-"45
+"46
 } 0
-"342 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+"341 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _tic_demo_shield2_1 tic_demo_shield2_1 `(v  1 e 1 0 ]
 {
-"346
+"345
 } 0
 "202
 [v _tic_debounce tic_debounce `(v  1 e 1 0 ]
@@ -1005,7 +1005,7 @@ KB_LIBERA 3
 [v debounce@sample sample `uc  1 a 1 0 ]
 "111
 } 0
-"159 C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
+"159 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 [v _tic_LCD tic_LCD `(v  1 e 1 0 ]
 {
 "162

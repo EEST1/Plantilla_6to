@@ -54,7 +54,7 @@ intcode CODE 0 2008 2008 6 1
 smallconst SMALLCONST 0 2018 2018 52 1
 dataCOMRAM COMRAM 1 45 45 A 1
 bssCOMRAM COMRAM 1 1 1 24 1
-$C:\Users\Admin\AppData\Local\Temp\s74s.obj
+$C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 200E 200E 4 1
 reset_vec CODE 0 2000 2000 4 1
@@ -108,31 +108,31 @@ MEDIUMCONST 206A-7531 1
 %LINETAB
 $dist/default/production\Shield2_1_2017.X.production.obj
 2008 intcode CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
-2008 intcode CODE >33:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-7594 text32 CODE >159:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7594 text32 CODE >160:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7690 text31 CODE >103:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7692 text31 CODE >106:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7698 text31 CODE >107:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76A0 text31 CODE >108:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76A8 text31 CODE >109:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76B2 text31 CODE >110:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75F4 text30 CODE >202:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75F4 text30 CODE >204:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75FE text30 CODE >206:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7602 text30 CODE >207:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75C4 text29 CODE >342:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75C4 text29 CODE >343:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75D2 text29 CODE >344:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75D6 text29 CODE >345:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75DA text29 CODE >346:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-795C intcode_body CODE >33:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-7996 intcode_body CODE >35:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-799A intcode_body CODE >36:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-799C intcode_body CODE >37:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-79A0 intcode_body CODE >38:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-79A2 intcode_body CODE >42:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-79A6 intcode_body CODE >45:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
+2008 intcode CODE >34:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7594 text32 CODE >159:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7594 text32 CODE >160:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7690 text31 CODE >103:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7692 text31 CODE >106:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7698 text31 CODE >107:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76A0 text31 CODE >108:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76A8 text31 CODE >109:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76B2 text31 CODE >110:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75F4 text30 CODE >202:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75F4 text30 CODE >204:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75FE text30 CODE >206:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7602 text30 CODE >207:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75C4 text29 CODE >341:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75C4 text29 CODE >342:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75D2 text29 CODE >343:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75D6 text29 CODE >344:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75DA text29 CODE >345:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+795C intcode_body CODE >34:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7996 intcode_body CODE >36:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+799A intcode_body CODE >37:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+799C intcode_body CODE >38:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A0 intcode_body CODE >39:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A2 intcode_body CODE >43:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A6 intcode_body CODE >46:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 7A70 text27 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 7A70 text27 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 7A74 text27 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
@@ -162,77 +162,77 @@ $dist/default/production\Shield2_1_2017.X.production.obj
 779E text26 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
 77AA text26 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
 77B6 text26 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\Umul16.c
-7D9A text25 CODE >161:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D9A text25 CODE >162:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7DA6 text25 CODE >163:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7DAA text25 CODE >164:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7DD2 text25 CODE >165:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E08 text25 CODE >168:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E20 text25 CODE >169:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E24 text25 CODE >170:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E2C text25 CODE >171:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E54 text25 CODE >172:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7E8A text25 CODE >175:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7EA2 text25 CODE >176:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7EA6 text25 CODE >177:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7EA8 text25 CODE >178:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7EAA text25 CODE >179:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F00 text25 CODE >182:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F18 text25 CODE >183:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F1C text25 CODE >184:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F1E text25 CODE >185:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F20 text25 CODE >186:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F7C text25 CODE >188:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F7E text25 CODE >189:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F8A text25 CODE >190:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F8E text25 CODE >191:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F90 text25 CODE >192:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7F92 text25 CODE >193:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7FD4 text25 CODE >196:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7FF6 text25 CODE >197:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7FFA text25 CODE >198:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7FFE text25 CODE >199:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7610 text24 CODE >149:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7614 text24 CODE >150:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7620 text24 CODE >151:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-762A text24 CODE >152:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76B6 text23 CODE >140:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76B6 text23 CODE >143:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76BA text23 CODE >144:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76BC text23 CODE >145:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76BE text23 CODE >147:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76C0 text23 CODE >148:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76C8 text23 CODE >149:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76CA text23 CODE >150:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76CC text23 CODE >151:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76CE text23 CODE >152:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76D0 text23 CODE >153:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76D6 text23 CODE >154:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76D8 text23 CODE >155:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-76DC text23 CODE >156:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7630 text22 CODE >119:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7632 text22 CODE >121:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7636 text22 CODE >122:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7638 text22 CODE >125:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-763E text22 CODE >127:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7640 text22 CODE >129:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7644 text22 CODE >130:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7646 text22 CODE >133:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-764C text22 CODE >135:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-764E text22 CODE >137:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-756A text21 CODE >110:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-756C text21 CODE >112:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-756E text21 CODE >113:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7570 text21 CODE >114:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7576 text21 CODE >116:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7546 text20 CODE >61:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7546 text20 CODE >62:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-754C text20 CODE >63:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7550 text20 CODE >64:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7650 text19 CODE >155:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7654 text19 CODE >156:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7660 text19 CODE >157:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-766A text19 CODE >158:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
+7D9A text25 CODE >161:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D9A text25 CODE >162:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7DA6 text25 CODE >163:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7DAA text25 CODE >164:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7DD2 text25 CODE >165:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E08 text25 CODE >168:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E20 text25 CODE >169:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E24 text25 CODE >170:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E2C text25 CODE >171:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E54 text25 CODE >172:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7E8A text25 CODE >175:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7EA2 text25 CODE >176:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7EA6 text25 CODE >177:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7EA8 text25 CODE >178:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7EAA text25 CODE >179:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F00 text25 CODE >182:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F18 text25 CODE >183:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F1C text25 CODE >184:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F1E text25 CODE >185:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F20 text25 CODE >186:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F7C text25 CODE >188:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F7E text25 CODE >189:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F8A text25 CODE >190:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F8E text25 CODE >191:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F90 text25 CODE >192:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7F92 text25 CODE >193:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7FD4 text25 CODE >196:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7FF6 text25 CODE >197:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7FFA text25 CODE >198:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7FFE text25 CODE >199:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7610 text24 CODE >149:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7614 text24 CODE >150:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7620 text24 CODE >151:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+762A text24 CODE >152:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76B6 text23 CODE >140:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76B6 text23 CODE >143:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76BA text23 CODE >144:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76BC text23 CODE >145:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76BE text23 CODE >147:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76C0 text23 CODE >148:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76C8 text23 CODE >149:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76CA text23 CODE >150:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76CC text23 CODE >151:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76CE text23 CODE >152:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76D0 text23 CODE >153:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76D6 text23 CODE >154:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76D8 text23 CODE >155:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+76DC text23 CODE >156:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7630 text22 CODE >119:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7632 text22 CODE >121:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7636 text22 CODE >122:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7638 text22 CODE >125:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+763E text22 CODE >127:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7640 text22 CODE >129:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7644 text22 CODE >130:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7646 text22 CODE >133:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+764C text22 CODE >135:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+764E text22 CODE >137:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+756A text21 CODE >110:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+756C text21 CODE >112:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+756E text21 CODE >113:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7570 text21 CODE >114:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7576 text21 CODE >116:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7546 text20 CODE >61:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7546 text20 CODE >62:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+754C text20 CODE >63:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7550 text20 CODE >64:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7650 text19 CODE >155:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7654 text19 CODE >156:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7660 text19 CODE >157:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+766A text19 CODE >158:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 78D8 text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awdiv.c
 78D8 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awdiv.c
 78DC text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awdiv.c
@@ -277,253 +277,253 @@ $dist/default/production\Shield2_1_2017.X.production.obj
 78C0 text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awmod.c
 78C6 text17 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awmod.c
 78CE text17 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\awmod.c
-7578 text16 CODE >101:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-757A text16 CODE >103:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-757C text16 CODE >104:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-757E text16 CODE >105:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7584 text16 CODE >107:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7586 text15 CODE >37:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7588 text15 CODE >39:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-758E text15 CODE >40:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7592 text15 CODE >41:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7552 text14 CODE >44:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7552 text14 CODE >45:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7558 text14 CODE >46:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-755C text14 CODE >47:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75A4 text13 CODE >118:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75A6 text13 CODE >119:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75A8 text13 CODE >121:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75AC text13 CODE >122:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75B0 text13 CODE >123:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75B2 text13 CODE >125:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77F4 text12 CODE >112:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77F4 text12 CODE >114:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77F8 text12 CODE >115:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7760 text11 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7760 text11 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7762 text11 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7772 text11 CODE >31:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7776 text11 CODE >32:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-777A text11 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7708 text10 CODE >126:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7708 text10 CODE >129:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-770C text10 CODE >130:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7710 text10 CODE >132:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7712 text10 CODE >133:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7716 text10 CODE >135:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-771A text10 CODE >136:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-771C text10 CODE >137:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-771E text10 CODE >139:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7722 text10 CODE >141:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7724 text10 CODE >142:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7728 text10 CODE >143:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-772C text10 CODE >144:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7730 text10 CODE >146:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-755E text9 CODE >50:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-755E text9 CODE >51:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7564 text9 CODE >52:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7568 text9 CODE >53:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75B4 text8 CODE >56:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75B6 text8 CODE >57:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75B8 text8 CODE >58:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75BE text8 CODE >59:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-75C2 text8 CODE >60:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7B3C text7 CODE >265:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B3C text7 CODE >269:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B4A text7 CODE >270:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B58 text7 CODE >271:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B5C text7 CODE >272:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B68 text7 CODE >273:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B6C text7 CODE >274:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B70 text7 CODE >275:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B76 text7 CODE >276:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B80 text7 CODE >277:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B84 text7 CODE >278:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B8A text7 CODE >279:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7B92 text7 CODE >280:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BA2 text7 CODE >281:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BAA text7 CODE >282:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BB0 text7 CODE >283:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BB6 text7 CODE >285:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BC4 text7 CODE >286:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BD2 text7 CODE >287:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BD6 text7 CODE >288:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BE2 text7 CODE >289:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BE6 text7 CODE >290:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BEC text7 CODE >291:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BF6 text7 CODE >292:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7BFA text7 CODE >293:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C00 text7 CODE >294:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C08 text7 CODE >297:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C16 text7 CODE >298:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C24 text7 CODE >299:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C28 text7 CODE >300:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C34 text7 CODE >301:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C38 text7 CODE >302:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C3E text7 CODE >303:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C48 text7 CODE >304:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C4C text7 CODE >305:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C52 text7 CODE >306:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C5A text7 CODE >309:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C68 text7 CODE >310:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C76 text7 CODE >311:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C7A text7 CODE >312:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C86 text7 CODE >313:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C8A text7 CODE >315:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C94 text7 CODE >316:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C98 text7 CODE >317:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7C9E text7 CODE >318:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7CA6 text7 CODE >320:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7CAA text7 CODE >321:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7CB0 text7 CODE >322:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7CCA text7 CODE >323:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7CF8 text7 CODE >324:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D12 text7 CODE >325:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D1E text7 CODE >327:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D32 text7 CODE >328:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D36 text7 CODE >329:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D3E text7 CODE >330:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D3E text7 CODE >331:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D4E text7 CODE >332:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D5E text7 CODE >333:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D6E text7 CODE >334:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D7E text7 CODE >336:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D8C text7 CODE >337:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7D90 text7 CODE >338:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-79E2 text6 CODE >67:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79E2 text6 CODE >68:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79E6 text6 CODE >69:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79E8 text6 CODE >70:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79EA text6 CODE >71:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79EC text6 CODE >74:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79F4 text6 CODE >75:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-79FC text6 CODE >77:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A02 text6 CODE >78:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A0A text6 CODE >79:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A12 text6 CODE >81:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A18 text6 CODE >82:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A20 text6 CODE >83:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A28 text6 CODE >85:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A2E text6 CODE >86:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A36 text6 CODE >87:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A3E text6 CODE >89:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A44 text6 CODE >90:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A4C text6 CODE >91:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A54 text6 CODE >93:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A5A text6 CODE >94:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A62 text6 CODE >95:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A6A text6 CODE >97:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7A6E text6 CODE >99:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\lcd.c
-7734 text5 CODE >3:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7734 text5 CODE >7:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7738 text5 CODE >8:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-773C text5 CODE >9:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7740 text5 CODE >10:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7744 text5 CODE >11:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7748 text5 CODE >15:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-774A text5 CODE >17:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-774C text5 CODE >18:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-774E text5 CODE >22:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7752 text5 CODE >24:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-7756 text5 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-775A text5 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-775E text5 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\ConfShield2_1.c
-75DC text4 CODE >14:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75DC text4 CODE >15:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75DE text4 CODE >16:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75E0 text4 CODE >17:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75E2 text4 CODE >18:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75E4 text4 CODE >19:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75E6 text4 CODE >20:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75E8 text4 CODE >21:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75EA text4 CODE >22:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75EE text4 CODE >23:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75F0 text4 CODE >24:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-75F2 text4 CODE >25:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7670 text3 CODE >26:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7670 text3 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7672 text3 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7674 text3 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7676 text3 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7678 text3 CODE >31:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-767C text3 CODE >32:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-767E text3 CODE >33:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7680 text3 CODE >34:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7684 text3 CODE >35:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7688 text3 CODE >36:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-768A text3 CODE >37:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-768C text3 CODE >38:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-768E text3 CODE >40:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76DE text2 CODE >42:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76DE text2 CODE >44:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76E0 text2 CODE >45:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76E2 text2 CODE >46:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76E4 text2 CODE >47:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76E8 text2 CODE >48:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76EC text2 CODE >49:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76EE text2 CODE >52:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76F0 text2 CODE >53:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76F2 text2 CODE >56:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76F4 text2 CODE >57:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76F6 text2 CODE >58:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76F8 text2 CODE >59:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76FA text2 CODE >60:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76FC text2 CODE >61:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-76FE text2 CODE >62:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7700 text2 CODE >64:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7702 text2 CODE >65:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7704 text2 CODE >66:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7706 text2 CODE >73:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77C0 text1 CODE >248:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77C0 text1 CODE >249:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77C4 text1 CODE >250:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77C8 text1 CODE >251:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77CC text1 CODE >252:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77D0 text1 CODE >253:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77D2 text1 CODE >254:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77D4 text1 CODE >255:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77D6 text1 CODE >256:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77DA text1 CODE >257:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77DE text1 CODE >258:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77E2 text1 CODE >259:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77EE text1 CODE >261:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77F0 text1 CODE >262:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-77F2 text1 CODE >264:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\Tecnica1.c
-7532 text0 CODE >22:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-7532 text0 CODE >24:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-7536 text0 CODE >26:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-7536 text0 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-753A text0 CODE >26:C:\Users\Admin\MPLABXProjects\6to\Shield2_1_2017.X\main.c
-782E cinit CODE >2854:C:\Users\Admin\AppData\Local\Temp\s74s.
-782E cinit CODE >2856:C:\Users\Admin\AppData\Local\Temp\s74s.
-782E cinit CODE >2859:C:\Users\Admin\AppData\Local\Temp\s74s.
-782E cinit CODE >3003:C:\Users\Admin\AppData\Local\Temp\s74s.
-7830 cinit CODE >3004:C:\Users\Admin\AppData\Local\Temp\s74s.
-7832 cinit CODE >3005:C:\Users\Admin\AppData\Local\Temp\s74s.
-7834 cinit CODE >3006:C:\Users\Admin\AppData\Local\Temp\s74s.
-7836 cinit CODE >3007:C:\Users\Admin\AppData\Local\Temp\s74s.
-7838 cinit CODE >3008:C:\Users\Admin\AppData\Local\Temp\s74s.
-783A cinit CODE >3009:C:\Users\Admin\AppData\Local\Temp\s74s.
-783E cinit CODE >3010:C:\Users\Admin\AppData\Local\Temp\s74s.
-7842 cinit CODE >3011:C:\Users\Admin\AppData\Local\Temp\s74s.
-7842 cinit CODE >3012:C:\Users\Admin\AppData\Local\Temp\s74s.
-7844 cinit CODE >3013:C:\Users\Admin\AppData\Local\Temp\s74s.
-7848 cinit CODE >3014:C:\Users\Admin\AppData\Local\Temp\s74s.
-784A cinit CODE >3015:C:\Users\Admin\AppData\Local\Temp\s74s.
-784C cinit CODE >3016:C:\Users\Admin\AppData\Local\Temp\s74s.
-784E cinit CODE >3020:C:\Users\Admin\AppData\Local\Temp\s74s.
-7852 cinit CODE >3021:C:\Users\Admin\AppData\Local\Temp\s74s.
-7854 cinit CODE >3022:C:\Users\Admin\AppData\Local\Temp\s74s.
-7854 cinit CODE >3023:C:\Users\Admin\AppData\Local\Temp\s74s.
-7856 cinit CODE >3024:C:\Users\Admin\AppData\Local\Temp\s74s.
-7858 cinit CODE >3025:C:\Users\Admin\AppData\Local\Temp\s74s.
-785A cinit CODE >3031:C:\Users\Admin\AppData\Local\Temp\s74s.
-785A cinit CODE >3033:C:\Users\Admin\AppData\Local\Temp\s74s.
-785C cinit CODE >3034:C:\Users\Admin\AppData\Local\Temp\s74s.
-785E cinit CODE >3036:C:\Users\Admin\AppData\Local\Temp\s74s.
-7860 cinit CODE >3037:C:\Users\Admin\AppData\Local\Temp\s74s.
-7862 cinit CODE >3038:C:\Users\Admin\AppData\Local\Temp\s74s.
-7864 cinit CODE >3039:C:\Users\Admin\AppData\Local\Temp\s74s.
+7578 text16 CODE >101:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+757A text16 CODE >103:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+757C text16 CODE >104:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+757E text16 CODE >105:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7584 text16 CODE >107:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7586 text15 CODE >37:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7588 text15 CODE >39:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+758E text15 CODE >40:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7592 text15 CODE >41:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7552 text14 CODE >44:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7552 text14 CODE >45:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7558 text14 CODE >46:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+755C text14 CODE >47:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75A4 text13 CODE >118:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75A6 text13 CODE >119:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75A8 text13 CODE >121:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75AC text13 CODE >122:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75B0 text13 CODE >123:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75B2 text13 CODE >125:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77F4 text12 CODE >112:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77F4 text12 CODE >114:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77F8 text12 CODE >115:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7760 text11 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7760 text11 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7762 text11 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7772 text11 CODE >31:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7776 text11 CODE >32:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+777A text11 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7708 text10 CODE >126:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7708 text10 CODE >129:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+770C text10 CODE >130:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7710 text10 CODE >132:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7712 text10 CODE >133:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7716 text10 CODE >135:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+771A text10 CODE >136:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+771C text10 CODE >137:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+771E text10 CODE >139:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7722 text10 CODE >141:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7724 text10 CODE >142:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7728 text10 CODE >143:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+772C text10 CODE >144:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7730 text10 CODE >146:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+755E text9 CODE >50:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+755E text9 CODE >51:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7564 text9 CODE >52:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7568 text9 CODE >53:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75B4 text8 CODE >56:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75B6 text8 CODE >57:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75B8 text8 CODE >58:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75BE text8 CODE >59:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+75C2 text8 CODE >60:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7B3C text7 CODE >264:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B3C text7 CODE >268:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B4A text7 CODE >269:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B58 text7 CODE >270:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B5C text7 CODE >271:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B68 text7 CODE >272:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B6C text7 CODE >273:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B70 text7 CODE >274:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B76 text7 CODE >275:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B80 text7 CODE >276:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B84 text7 CODE >277:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B8A text7 CODE >278:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7B92 text7 CODE >279:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BA2 text7 CODE >280:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BAA text7 CODE >281:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BB0 text7 CODE >282:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BB6 text7 CODE >284:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BC4 text7 CODE >285:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BD2 text7 CODE >286:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BD6 text7 CODE >287:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BE2 text7 CODE >288:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BE6 text7 CODE >289:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BEC text7 CODE >290:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BF6 text7 CODE >291:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7BFA text7 CODE >292:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C00 text7 CODE >293:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C08 text7 CODE >296:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C16 text7 CODE >297:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C24 text7 CODE >298:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C28 text7 CODE >299:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C34 text7 CODE >300:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C38 text7 CODE >301:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C3E text7 CODE >302:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C48 text7 CODE >303:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C4C text7 CODE >304:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C52 text7 CODE >305:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C5A text7 CODE >308:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C68 text7 CODE >309:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C76 text7 CODE >310:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C7A text7 CODE >311:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C86 text7 CODE >312:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C8A text7 CODE >314:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C94 text7 CODE >315:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C98 text7 CODE >316:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7C9E text7 CODE >317:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7CA6 text7 CODE >319:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7CAA text7 CODE >320:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7CB0 text7 CODE >321:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7CCA text7 CODE >322:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7CF8 text7 CODE >323:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D12 text7 CODE >324:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D1E text7 CODE >326:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D32 text7 CODE >327:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D36 text7 CODE >328:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D3E text7 CODE >329:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D3E text7 CODE >330:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D4E text7 CODE >331:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D5E text7 CODE >332:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D6E text7 CODE >333:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D7E text7 CODE >335:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D8C text7 CODE >336:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7D90 text7 CODE >337:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+79E2 text6 CODE >67:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79E2 text6 CODE >68:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79E6 text6 CODE >69:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79E8 text6 CODE >70:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79EA text6 CODE >71:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79EC text6 CODE >74:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79F4 text6 CODE >75:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+79FC text6 CODE >77:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A02 text6 CODE >78:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A0A text6 CODE >79:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A12 text6 CODE >81:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A18 text6 CODE >82:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A20 text6 CODE >83:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A28 text6 CODE >85:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A2E text6 CODE >86:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A36 text6 CODE >87:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A3E text6 CODE >89:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A44 text6 CODE >90:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A4C text6 CODE >91:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A54 text6 CODE >93:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A5A text6 CODE >94:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A62 text6 CODE >95:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A6A text6 CODE >97:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7A6E text6 CODE >99:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
+7734 text5 CODE >3:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7734 text5 CODE >7:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7738 text5 CODE >8:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+773C text5 CODE >9:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7740 text5 CODE >10:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7744 text5 CODE >11:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7748 text5 CODE >15:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+774A text5 CODE >17:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+774C text5 CODE >18:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+774E text5 CODE >22:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7752 text5 CODE >24:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+7756 text5 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+775A text5 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+775E text5 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\ConfShield2_1.c
+75DC text4 CODE >14:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75DC text4 CODE >15:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75DE text4 CODE >16:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75E0 text4 CODE >17:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75E2 text4 CODE >18:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75E4 text4 CODE >19:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75E6 text4 CODE >20:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75E8 text4 CODE >21:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75EA text4 CODE >22:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75EE text4 CODE >23:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75F0 text4 CODE >24:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+75F2 text4 CODE >25:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7670 text3 CODE >26:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7670 text3 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7672 text3 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7674 text3 CODE >29:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7676 text3 CODE >30:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7678 text3 CODE >31:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+767C text3 CODE >32:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+767E text3 CODE >33:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7680 text3 CODE >34:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7684 text3 CODE >35:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7688 text3 CODE >36:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+768A text3 CODE >37:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+768C text3 CODE >38:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+768E text3 CODE >40:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76DE text2 CODE >42:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76DE text2 CODE >44:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76E0 text2 CODE >45:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76E2 text2 CODE >46:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76E4 text2 CODE >47:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76E8 text2 CODE >48:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76EC text2 CODE >49:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76EE text2 CODE >52:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76F0 text2 CODE >53:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76F2 text2 CODE >56:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76F4 text2 CODE >57:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76F6 text2 CODE >58:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76F8 text2 CODE >59:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76FA text2 CODE >60:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76FC text2 CODE >61:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+76FE text2 CODE >62:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7700 text2 CODE >64:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7702 text2 CODE >65:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7704 text2 CODE >66:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7706 text2 CODE >73:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77C0 text1 CODE >247:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77C0 text1 CODE >248:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77C4 text1 CODE >249:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77C8 text1 CODE >250:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77CC text1 CODE >251:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77D0 text1 CODE >252:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77D2 text1 CODE >253:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77D4 text1 CODE >254:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77D6 text1 CODE >255:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77DA text1 CODE >256:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77DE text1 CODE >257:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77E2 text1 CODE >258:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77EE text1 CODE >260:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77F0 text1 CODE >261:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+77F2 text1 CODE >263:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
+7532 text0 CODE >23:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7532 text0 CODE >25:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7536 text0 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7536 text0 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+753A text0 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+782E cinit CODE >2854:C:\Users\Admin\AppData\Local\Temp\s2tg.
+782E cinit CODE >2856:C:\Users\Admin\AppData\Local\Temp\s2tg.
+782E cinit CODE >2859:C:\Users\Admin\AppData\Local\Temp\s2tg.
+782E cinit CODE >3003:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7830 cinit CODE >3004:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7832 cinit CODE >3005:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7834 cinit CODE >3006:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7836 cinit CODE >3007:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7838 cinit CODE >3008:C:\Users\Admin\AppData\Local\Temp\s2tg.
+783A cinit CODE >3009:C:\Users\Admin\AppData\Local\Temp\s2tg.
+783E cinit CODE >3010:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7842 cinit CODE >3011:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7842 cinit CODE >3012:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7844 cinit CODE >3013:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7848 cinit CODE >3014:C:\Users\Admin\AppData\Local\Temp\s2tg.
+784A cinit CODE >3015:C:\Users\Admin\AppData\Local\Temp\s2tg.
+784C cinit CODE >3016:C:\Users\Admin\AppData\Local\Temp\s2tg.
+784E cinit CODE >3020:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7852 cinit CODE >3021:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7854 cinit CODE >3022:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7854 cinit CODE >3023:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7856 cinit CODE >3024:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7858 cinit CODE >3025:C:\Users\Admin\AppData\Local\Temp\s2tg.
+785A cinit CODE >3031:C:\Users\Admin\AppData\Local\Temp\s2tg.
+785A cinit CODE >3033:C:\Users\Admin\AppData\Local\Temp\s2tg.
+785C cinit CODE >3034:C:\Users\Admin\AppData\Local\Temp\s2tg.
+785E cinit CODE >3036:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7860 cinit CODE >3037:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7862 cinit CODE >3038:C:\Users\Admin\AppData\Local\Temp\s2tg.
+7864 cinit CODE >3039:C:\Users\Admin\AppData\Local\Temp\s2tg.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -551,7 +551,7 @@ __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.o
 _tic_LCD 7594 0 CODE 0 text32 dist/default/production\Shield2_1_2017.X.production.obj
 __end_of_write_DATA 7586 0 CODE 0 text16 dist/default/production\Shield2_1_2017.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Shield2_1_2017.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Admin\AppData\Local\Temp\s74s.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _T1CONbits FCD 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -567,11 +567,11 @@ _RBIE 7F93 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBIF 7F90 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBIP 7F88 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBPU 7F8F 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s74s.obj
+___sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 _fila 4A 0 COMRAM 1 dataCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _main 7532 0 CODE 0 text0 dist/default/production\Shield2_1_2017.X.production.obj
 btemp 4F 0 COMRAM 1 temp dist/default/production\Shield2_1_2017.X.production.obj
-start 200E 0 CODE 0 init C:\Users\Admin\AppData\Local\Temp\s74s.obj
+start 200E 0 CODE 0 init C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -592,11 +592,11 @@ set_CURSOR@posi 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_201
 msg2LCD@datos 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 demo_shield2_1@Desplazar 1A 0 COMRAM 1 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _tic_debounce 75F4 0 CODE 0 text30 dist/default/production\Shield2_1_2017.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s74s.obj
-intlevel0 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s74s.obj
-intlevel1 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s74s.obj
-intlevel2 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s74s.obj
-intlevel3 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s74s.obj
+__accesstop 60 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+intlevel0 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+intlevel1 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+intlevel2 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+intlevel3 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __end_of_LCD_init 7A70 0 CODE 0 text6 dist/default/production\Shield2_1_2017.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -622,8 +622,8 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_demo_shield2_1 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 ___awdiv@dividend 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s74s.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s74s.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _EECON1bits FA6 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -712,7 +712,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\Shield2_1_2017.X.production.obj
 __end_of_teclas 2025 0 SMALLCONST 0 smallconst dist/default/production\Shield2_1_2017.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Shield2_1_2017.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Shield2_1_2017.X.production.obj
-__smallconst 2018 0 SMALLCONST 0 smallconst C:\Users\Admin\AppData\Local\Temp\s74s.obj
+__smallconst 2018 0 SMALLCONST 0 smallconst C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\Shield2_1_2017.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -899,8 +899,8 @@ __end_of_write_LCD 7650 0 CODE 0 text22 dist/default/production\Shield2_1_2017.X
 read_BUSY@aux 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_write_CMD 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_write_LCD 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s74s.obj
-stacklo 67 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s74s.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+stacklo 67 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 __Lintcode 2008 0 CODE 0 intcode dist/default/production\Shield2_1_2017.X.production.obj
 _minimoEncoder 14 0 COMRAM 1 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\Shield2_1_2017.X.production.obj
@@ -973,7 +973,7 @@ __Ltext30 0 0 ABS 0 text30 dist/default/production\Shield2_1_2017.X.production.o
 __Ltext31 0 0 ABS 0 text31 dist/default/production\Shield2_1_2017.X.production.obj
 __Ltext32 0 0 ABS 0 text32 dist/default/production\Shield2_1_2017.X.production.obj
 _transmitir 75A4 0 CODE 0 text13 dist/default/production\Shield2_1_2017.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\Admin\AppData\Local\Temp\s74s.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Admin\AppData\Local\Temp\s2tg.obj
 ___aldiv@dividend 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __Lpowerup 200E 0 CODE 0 powerup dist/default/production\Shield2_1_2017.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Shield2_1_2017.X.production.obj

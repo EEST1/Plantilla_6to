@@ -4795,7 +4795,7 @@ void DesplazarIzquierda(void);
 # 63 "ConfShield2_1.h"
 void PicIni21(void);
 
-# 28 "Tecnica1.h"
+# 31 "Tecnica1.h"
 unsigned char EstadoDeLosBotones;
 
 
@@ -4835,7 +4835,13 @@ void tic_timer1(void);
 
 void tic_demo_shield2_1(void);
 
-# 22 "main.c"
+
+
+
+void demo_shield2_1_INI(void);
+void demo_shield2_1(void);
+
+# 23 "main.c"
 void main(void) {
 
 demo_shield2_1_INI();

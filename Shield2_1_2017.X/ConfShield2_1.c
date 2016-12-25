@@ -29,4 +29,3 @@ void PicIni21(void){
                             //de los periféricos se realiza por el usuario
 }
 
-

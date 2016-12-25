@@ -3,15 +3,16 @@
  * Author: Esteban Lemos                                                    *
  * Created on 5 de febrero de 2014, 20:49                                   *
  * En caso de necesitar el proyecto completo ingresar en                    *
- * https://github.com/EEST1/Ap_template                                     *
+ * https://github.com/EEST1/Plantilla_6to                                   *
  ****************************************************************************/
 
 #include <xc.h>
 #include "confbits.h"       //no se debe de modificar este archivo para
                             //garantizar el funcionamiento del BOOTLOADER
 
-
-
+/* descomentar aquella placa que usted desea utilizar */
+//#define Placa1_3            
+#define Placa2_1
 #include "Tecnica1.h"       //segun el shield habilita distintas librerias
 
 
@@ -25,7 +26,6 @@ void main(void) {
     
     while(1){
         demo_shield2_1();
-
     
     }    
 }
@@ -40,6 +40,5 @@ void __interrupt myISR(void){
    
         /*Llamada a funciones TIC 1ms ********************/
         tic_demo_shield2_1();
-    }
-    
+    }   
 }

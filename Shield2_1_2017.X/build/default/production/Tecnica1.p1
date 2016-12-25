@@ -174,7 +174,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S295 . . . . ]
 "7134
 [v _T2CONbits `VS295 ~T0 @X0 0 e@4042 ]
-"51 Tecnica1.h
+"54 Tecnica1.h
 [v _transmitir `(v ~T0 @X0 0 ef1`uc ]
 "5340 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f4550.h
 [v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
@@ -230,7 +230,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
 "6711
 [v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
-"36 Tecnica1.h
+"39 Tecnica1.h
 [v _CalculoDeFrecuencia `(v ~T0 @X0 0 ef ]
 "2418 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f4550.h
 [v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
@@ -3786,26 +3786,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd.h: 28: void tic_LCD(void);
 [; ;lcd.h: 29: void DesplazarIzquierda(void);
 [; ;ConfShield2_1.h: 63: void PicIni21(void);
-"28 Tecnica1.h
+"31 Tecnica1.h
 [v _EstadoDeLosBotones `uc ~T0 @X0 1 e ]
-[; ;Tecnica1.h: 28: unsigned char EstadoDeLosBotones;
-[; ;Tecnica1.h: 33: unsigned char debounce(unsigned char sample);
-[; ;Tecnica1.h: 36: void CalculoDeFrecuencia(void);
-[; ;Tecnica1.h: 37: void AumentarPeriodo(unsigned char);
-[; ;Tecnica1.h: 38: void DisminuirPeriodo(unsigned char);
-[; ;Tecnica1.h: 42: void TIMER0_INI(void);
-[; ;Tecnica1.h: 43: void TIMER1_INI(void);
-[; ;Tecnica1.h: 44: void PWM_INI(void);
-[; ;Tecnica1.h: 45: void USART_INI (void);
-[; ;Tecnica1.h: 48: void pwm_set(unsigned char periodo, unsigned char duty );
-[; ;Tecnica1.h: 49: unsigned char obtener_ADC8(void);
-[; ;Tecnica1.h: 50: void informar(const char *dato, char longitud);
-[; ;Tecnica1.h: 51: void transmitir(unsigned char Dato);
-[; ;Tecnica1.h: 55: void demo_shield2_1_INI(void);
-[; ;Tecnica1.h: 56: void demo_shield2_1(void);
-[; ;Tecnica1.h: 61: void tic_debounce(void);
-[; ;Tecnica1.h: 62: void tic_timer1(void);
-[; ;Tecnica1.h: 65: void tic_demo_shield2_1(void);
+[; ;Tecnica1.h: 31: unsigned char EstadoDeLosBotones;
+[; ;Tecnica1.h: 36: unsigned char debounce(unsigned char sample);
+[; ;Tecnica1.h: 39: void CalculoDeFrecuencia(void);
+[; ;Tecnica1.h: 40: void AumentarPeriodo(unsigned char);
+[; ;Tecnica1.h: 41: void DisminuirPeriodo(unsigned char);
+[; ;Tecnica1.h: 45: void TIMER0_INI(void);
+[; ;Tecnica1.h: 46: void TIMER1_INI(void);
+[; ;Tecnica1.h: 47: void PWM_INI(void);
+[; ;Tecnica1.h: 48: void USART_INI (void);
+[; ;Tecnica1.h: 51: void pwm_set(unsigned char periodo, unsigned char duty );
+[; ;Tecnica1.h: 52: unsigned char obtener_ADC8(void);
+[; ;Tecnica1.h: 53: void informar(const char *dato, char longitud);
+[; ;Tecnica1.h: 54: void transmitir(unsigned char Dato);
+[; ;Tecnica1.h: 58: void demo_shield2_1_INI(void);
+[; ;Tecnica1.h: 59: void demo_shield2_1(void);
+[; ;Tecnica1.h: 64: void tic_debounce(void);
+[; ;Tecnica1.h: 65: void tic_timer1(void);
+[; ;Tecnica1.h: 68: void tic_demo_shield2_1(void);
+[; ;Tecnica1.h: 73: void demo_shield2_1_INI(void);
+[; ;Tecnica1.h: 74: void demo_shield2_1(void);
 "4 Tecnica1.c
 [v _MedioPeriodoSet `ui ~T0 @X0 1 e ]
 [; ;Tecnica1.c: 4: unsigned int MedioPeriodoSet;
@@ -4065,28 +4067,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _sample `uc ~T0 @X0 1 r1 ]
 [f ]
 "104
-[v F3857 `uc ~T0 @X0 1 s state ]
-[v F3858 `uc ~T0 @X0 1 s cnt0 ]
-[v F3859 `uc ~T0 @X0 1 s cnt1 ]
+[v F3859 `uc ~T0 @X0 1 s state ]
+[v F3860 `uc ~T0 @X0 1 s cnt0 ]
+[v F3861 `uc ~T0 @X0 1 s cnt1 ]
 "105
 [v _delta `uc ~T0 @X0 1 a ]
 [; ;Tecnica1.c: 104: static unsigned char state, cnt0, cnt1;
 [; ;Tecnica1.c: 105: unsigned char delta;
 [; ;Tecnica1.c: 106: delta = (sample) ^ state;
 "106
-[e = _delta -> ^ -> _sample `i -> F3857 `i `uc ]
+[e = _delta -> ^ -> _sample `i -> F3859 `i `uc ]
 [; ;Tecnica1.c: 107: cnt1 = (cnt1 ^ cnt0) & delta;
 "107
-[e = F3859 -> & ^ -> F3859 `i -> F3858 `i -> _delta `i `uc ]
+[e = F3861 -> & ^ -> F3861 `i -> F3860 `i -> _delta `i `uc ]
 [; ;Tecnica1.c: 108: cnt0 = ~cnt0 & delta;
 "108
-[e = F3858 -> & ~ -> F3858 `i -> _delta `i `uc ]
+[e = F3860 -> & ~ -> F3860 `i -> _delta `i `uc ]
 [; ;Tecnica1.c: 109: state ^= delta & (~(cnt0 | cnt1));
 "109
-[e =^ F3857 -> & -> _delta `i ~ | -> F3858 `i -> F3859 `i `uc ]
+[e =^ F3859 -> & -> _delta `i ~ | -> F3860 `i -> F3861 `i `uc ]
 [; ;Tecnica1.c: 110: return state;
 "110
-[e ) F3857 ]
+[e ) F3859 ]
 [e $UE 369  ]
 [; ;Tecnica1.c: 111: }
 "111
@@ -4386,15 +4388,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _tic_debounce ]
 [f ]
 "203
-[v F3874 `uc ~T0 @X0 1 s debounce_tic ]
-[i F3874
+[v F3876 `uc ~T0 @X0 1 s debounce_tic ]
+[i F3876
 -> -> 10 `i `uc
 ]
 [; ;Tecnica1.c: 203: static unsigned char debounce_tic = 10;
 [; ;Tecnica1.c: 204: if (debounce_tic)debounce_tic--;
 "204
-[e $ ! != -> F3874 `i -> -> -> 0 `i `uc `i 398  ]
-[e -- F3874 -> -> 1 `i `uc ]
+[e $ ! != -> F3876 `i -> -> -> 0 `i `uc `i 398  ]
+[e -- F3876 -> -> 1 `i `uc ]
 [e $U 399  ]
 "205
 [e :U 398 ]
@@ -4402,7 +4404,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;Tecnica1.c: 206: debounce_tic = 10;
 "206
-[e = F3874 -> -> 10 `i `uc ]
+[e = F3876 -> -> 10 `i `uc ]
 [; ;Tecnica1.c: 207: EstadoDeLosBotones = debounce((PORTB^0xF0)&0xF0);
 "207
 [e = _EstadoDeLosBotones ( _debounce (1 -> & ^ -> _PORTB `i -> 240 `i -> 240 `i `uc ]
@@ -4508,374 +4510,374 @@ Version 3.2 HI-TECH Software Intermediate Code
 "245
 [e :UE 405 ]
 }
-"248
+"247
 [v _demo_shield2_1_INI `(v ~T0 @X0 1 ef ]
 {
-[; ;Tecnica1.c: 248: void demo_shield2_1_INI(void){
+[; ;Tecnica1.c: 247: void demo_shield2_1_INI(void){
 [e :U _demo_shield2_1_INI ]
 [f ]
-[; ;Tecnica1.c: 249: CalculoDeFrecuencia();
-"249
+[; ;Tecnica1.c: 248: CalculoDeFrecuencia();
+"248
 [e ( _CalculoDeFrecuencia ..  ]
-[; ;Tecnica1.c: 250: PicIni21();
-"250
+[; ;Tecnica1.c: 249: PicIni21();
+"249
 [e ( _PicIni21 ..  ]
-[; ;Tecnica1.c: 251: TIMER0_INI();
-"251
+[; ;Tecnica1.c: 250: TIMER0_INI();
+"250
 [e ( _TIMER0_INI ..  ]
-[; ;Tecnica1.c: 252: TIMER1_INI();
-"252
+[; ;Tecnica1.c: 251: TIMER1_INI();
+"251
 [e ( _TIMER1_INI ..  ]
-[; ;Tecnica1.c: 253: (INTCONbits.GIE = 1);
-"253
+[; ;Tecnica1.c: 252: (INTCONbits.GIE = 1);
+"252
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 254: T0CONbits.TMR0ON = 1;
-"254
+[; ;Tecnica1.c: 253: T0CONbits.TMR0ON = 1;
+"253
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 255: T1CONbits.TMR1ON = 1;
-"255
+[; ;Tecnica1.c: 254: T1CONbits.TMR1ON = 1;
+"254
 [e = . . _T1CONbits 1 0 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 256: LCD_init();
-"256
+[; ;Tecnica1.c: 255: LCD_init();
+"255
 [e ( _LCD_init ..  ]
-[; ;Tecnica1.c: 257: clear_LCD();
-"257
+[; ;Tecnica1.c: 256: clear_LCD();
+"256
 [e ( _clear_LCD ..  ]
-[; ;Tecnica1.c: 258: USART_INI();
-"258
+[; ;Tecnica1.c: 257: USART_INI();
+"257
 [e ( _USART_INI ..  ]
-[; ;Tecnica1.c: 259: msg2LCD("Hola Alumnos");
-"259
+[; ;Tecnica1.c: 258: msg2LCD("Hola Alumnos");
+"258
 [e ( _msg2LCD (1 :s 1C ]
-[; ;Tecnica1.c: 261: TRISAbits.TRISA2 = 0;;
-"261
+[; ;Tecnica1.c: 260: TRISAbits.TRISA2 = 0;;
+"260
 [e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
-[; ;Tecnica1.c: 262: TRISAbits.TRISA3 = 0;;
-"262
+[; ;Tecnica1.c: 261: TRISAbits.TRISA3 = 0;;
+"261
 [e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
-[; ;Tecnica1.c: 264: }
-"264
+[; ;Tecnica1.c: 263: }
+"263
 [e :UE 406 ]
 }
-"265
+"264
 [v _demo_shield2_1 `(v ~T0 @X0 1 ef ]
 {
-[; ;Tecnica1.c: 265: void demo_shield2_1(void){
+[; ;Tecnica1.c: 264: void demo_shield2_1(void){
 [e :U _demo_shield2_1 ]
 [f ]
-"266
-[v F3885 `uc ~T0 @X0 1 s flag0 ]
-[i F3885
--> -> 0 `i `uc
-]
-[v F3886 `uc ~T0 @X0 1 s flag1 ]
-[i F3886
--> -> 0 `i `uc
-]
-[v F3887 `uc ~T0 @X0 1 s flag2 ]
+"265
+[v F3887 `uc ~T0 @X0 1 s flag0 ]
 [i F3887
 -> -> 0 `i `uc
 ]
-[v F3888 `uc ~T0 @X0 1 s flag3 ]
+[v F3888 `uc ~T0 @X0 1 s flag1 ]
 [i F3888
 -> -> 0 `i `uc
 ]
-[v F3889 `uc ~T0 @X0 1 s PrimeraVez ]
+[v F3889 `uc ~T0 @X0 1 s flag2 ]
 [i F3889
 -> -> 0 `i `uc
 ]
-[v F3890 `uc ~T0 @X0 1 s Desplazar ]
+[v F3890 `uc ~T0 @X0 1 s flag3 ]
 [i F3890
 -> -> 0 `i `uc
 ]
-"267
-[v F3891 `uc ~T0 @X0 1 s cont ]
+[v F3891 `uc ~T0 @X0 1 s PrimeraVez ]
 [i F3891
 -> -> 0 `i `uc
 ]
-[v F3892 `uc ~T0 @X0 1 s cont1 ]
-[v F3893 `uc ~T0 @X0 1 s cont2 ]
-[v F3894 `uc ~T0 @X0 1 s cont3 ]
-[; ;Tecnica1.c: 266: static unsigned char flag0=0,flag1=0,flag2=0,flag3=0,PrimeraVez=0,Desplazar=0;
-[; ;Tecnica1.c: 267: static unsigned char cont=0,cont1,cont2,cont3;
-[; ;Tecnica1.c: 269: if(EstadoDeLosBotones == 16 && flag0==0){
-"269
-[e $ ! && == -> _EstadoDeLosBotones `i -> 16 `i == -> F3885 `i -> 0 `i 408  ]
+[v F3892 `uc ~T0 @X0 1 s Desplazar ]
+[i F3892
+-> -> 0 `i `uc
+]
+"266
+[v F3893 `uc ~T0 @X0 1 s cont ]
+[i F3893
+-> -> 0 `i `uc
+]
+[v F3894 `uc ~T0 @X0 1 s cont1 ]
+[v F3895 `uc ~T0 @X0 1 s cont2 ]
+[v F3896 `uc ~T0 @X0 1 s cont3 ]
+[; ;Tecnica1.c: 265: static unsigned char flag0=0,flag1=0,flag2=0,flag3=0,PrimeraVez=0,Desplazar=0;
+[; ;Tecnica1.c: 266: static unsigned char cont=0,cont1,cont2,cont3;
+[; ;Tecnica1.c: 268: if(EstadoDeLosBotones == 16 && flag0==0){
+"268
+[e $ ! && == -> _EstadoDeLosBotones `i -> 16 `i == -> F3887 `i -> 0 `i 408  ]
 {
-[; ;Tecnica1.c: 270: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
-"270
-[e $ ! ! != -> F3889 `i -> -> -> 0 `i `uc `i 409  ]
+[; ;Tecnica1.c: 269: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+"269
+[e $ ! ! != -> F3891 `i -> -> -> 0 `i `uc `i 409  ]
 {
 [e ( _clear_LCD ..  ]
-[e = F3889 -> -> 1 `i `uc ]
+[e = F3891 -> -> 1 `i `uc ]
 }
 [e :U 409 ]
-[; ;Tecnica1.c: 271: ret_HOME();
-"271
+[; ;Tecnica1.c: 270: ret_HOME();
+"270
 [e ( _ret_HOME ..  ]
-[; ;Tecnica1.c: 272: msg2LCD("BOT1");
-"272
+[; ;Tecnica1.c: 271: msg2LCD("BOT1");
+"271
 [e ( _msg2LCD (1 :s 2C ]
-[; ;Tecnica1.c: 273: flag0=1;
+[; ;Tecnica1.c: 272: flag0=1;
+"272
+[e = F3887 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 273: Desplazar = 0;
 "273
-[e = F3885 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 274: Desplazar = 0;
+[e = F3892 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 274: AumentarPeriodo(10);
 "274
-[e = F3890 -> -> 0 `i `uc ]
-[; ;Tecnica1.c: 275: AumentarPeriodo(10);
-"275
 [e ( _AumentarPeriodo (1 -> -> 10 `i `uc ]
-[; ;Tecnica1.c: 276: if(cont<9)cont++;
-"276
-[e $ ! < -> F3891 `i -> 9 `i 410  ]
-[e ++ F3891 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 275: if(cont<9)cont++;
+"275
+[e $ ! < -> F3893 `i -> 9 `i 410  ]
+[e ++ F3893 -> -> 1 `i `uc ]
 [e $U 411  ]
-"277
+"276
 [e :U 410 ]
-[; ;Tecnica1.c: 277: else cont =0;
-[e = F3891 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 276: else cont =0;
+[e = F3893 -> -> 0 `i `uc ]
 [e :U 411 ]
-[; ;Tecnica1.c: 278: set_CURSOR(0x40);
-"278
+[; ;Tecnica1.c: 277: set_CURSOR(0x40);
+"277
 [e ( _set_CURSOR (1 -> -> 64 `i `uc ]
-[; ;Tecnica1.c: 279: char2LCD(cont+0x30);
+[; ;Tecnica1.c: 278: char2LCD(cont+0x30);
+"278
+[e ( _char2LCD (1 -> + -> F3893 `i -> 48 `i `uc ]
+[; ;Tecnica1.c: 279: informar("BOT1 ",sizeof("BOT1 "));
 "279
-[e ( _char2LCD (1 -> + -> F3891 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 280: informar("BOT1 ",sizeof("BOT1 "));
-"280
 [e ( _informar (2 , :s 3C -> -> 6 `ui `uc ]
-[; ;Tecnica1.c: 281: transmitir(cont+0x30);
+[; ;Tecnica1.c: 280: transmitir(cont+0x30);
+"280
+[e ( _transmitir (1 -> + -> F3893 `i -> 48 `i `uc ]
+[; ;Tecnica1.c: 281: transmitir('\n');
 "281
-[e ( _transmitir (1 -> + -> F3891 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 282: transmitir('\n');
-"282
 [e ( _transmitir (1 -> -> 10 `ui `uc ]
-[; ;Tecnica1.c: 283: transmitir('\r');
-"283
+[; ;Tecnica1.c: 282: transmitir('\r');
+"282
 [e ( _transmitir (1 -> -> 13 `ui `uc ]
-"284
+"283
 }
 [e :U 408 ]
-[; ;Tecnica1.c: 284: }
-[; ;Tecnica1.c: 285: if(EstadoDeLosBotones == 32 && !flag1){
-"285
-[e $ ! && == -> _EstadoDeLosBotones `i -> 32 `i ! != -> F3886 `i -> -> -> 0 `i `uc `i 412  ]
+[; ;Tecnica1.c: 283: }
+[; ;Tecnica1.c: 284: if(EstadoDeLosBotones == 32 && !flag1){
+"284
+[e $ ! && == -> _EstadoDeLosBotones `i -> 32 `i ! != -> F3888 `i -> -> -> 0 `i `uc `i 412  ]
 {
-[; ;Tecnica1.c: 286: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
-"286
-[e $ ! ! != -> F3889 `i -> -> -> 0 `i `uc `i 413  ]
+[; ;Tecnica1.c: 285: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+"285
+[e $ ! ! != -> F3891 `i -> -> -> 0 `i `uc `i 413  ]
 {
 [e ( _clear_LCD ..  ]
-[e = F3889 -> -> 1 `i `uc ]
+[e = F3891 -> -> 1 `i `uc ]
 }
 [e :U 413 ]
-[; ;Tecnica1.c: 287: ret_HOME();
-"287
+[; ;Tecnica1.c: 286: ret_HOME();
+"286
 [e ( _ret_HOME ..  ]
-[; ;Tecnica1.c: 288: msg2LCD("BOT2");
-"288
+[; ;Tecnica1.c: 287: msg2LCD("BOT2");
+"287
 [e ( _msg2LCD (1 :s 5C ]
-[; ;Tecnica1.c: 289: flag1=1;
+[; ;Tecnica1.c: 288: flag1=1;
+"288
+[e = F3888 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 289: DisminuirPeriodo(10);
 "289
-[e = F3886 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 290: DisminuirPeriodo(10);
-"290
 [e ( _DisminuirPeriodo (1 -> -> 10 `i `uc ]
-[; ;Tecnica1.c: 291: if(cont1<9)cont1++;
-"291
-[e $ ! < -> F3892 `i -> 9 `i 414  ]
-[e ++ F3892 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 290: if(cont1<9)cont1++;
+"290
+[e $ ! < -> F3894 `i -> 9 `i 414  ]
+[e ++ F3894 -> -> 1 `i `uc ]
 [e $U 415  ]
-"292
+"291
 [e :U 414 ]
-[; ;Tecnica1.c: 292: else cont1 =0;
-[e = F3892 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 291: else cont1 =0;
+[e = F3894 -> -> 0 `i `uc ]
 [e :U 415 ]
-[; ;Tecnica1.c: 293: set_CURSOR(0x42);
-"293
+[; ;Tecnica1.c: 292: set_CURSOR(0x42);
+"292
 [e ( _set_CURSOR (1 -> -> 66 `i `uc ]
-[; ;Tecnica1.c: 294: char2LCD(cont1+0x30);
-"294
-[e ( _char2LCD (1 -> + -> F3892 `i -> 48 `i `uc ]
-"296
+[; ;Tecnica1.c: 293: char2LCD(cont1+0x30);
+"293
+[e ( _char2LCD (1 -> + -> F3894 `i -> 48 `i `uc ]
+"295
 }
 [e :U 412 ]
-[; ;Tecnica1.c: 296: }
-[; ;Tecnica1.c: 297: if(EstadoDeLosBotones == 64 && flag2==0){
-"297
-[e $ ! && == -> _EstadoDeLosBotones `i -> 64 `i == -> F3887 `i -> 0 `i 416  ]
+[; ;Tecnica1.c: 295: }
+[; ;Tecnica1.c: 296: if(EstadoDeLosBotones == 64 && flag2==0){
+"296
+[e $ ! && == -> _EstadoDeLosBotones `i -> 64 `i == -> F3889 `i -> 0 `i 416  ]
 {
-[; ;Tecnica1.c: 298: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
-"298
-[e $ ! ! != -> F3889 `i -> -> -> 0 `i `uc `i 417  ]
+[; ;Tecnica1.c: 297: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+"297
+[e $ ! ! != -> F3891 `i -> -> -> 0 `i `uc `i 417  ]
 {
 [e ( _clear_LCD ..  ]
-[e = F3889 -> -> 1 `i `uc ]
+[e = F3891 -> -> 1 `i `uc ]
 }
 [e :U 417 ]
-[; ;Tecnica1.c: 299: ret_HOME();
-"299
+[; ;Tecnica1.c: 298: ret_HOME();
+"298
 [e ( _ret_HOME ..  ]
-[; ;Tecnica1.c: 300: msg2LCD("BOT3");
-"300
+[; ;Tecnica1.c: 299: msg2LCD("BOT3");
+"299
 [e ( _msg2LCD (1 :s 6C ]
-[; ;Tecnica1.c: 301: flag2=1;
+[; ;Tecnica1.c: 300: flag2=1;
+"300
+[e = F3889 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 301: AumentarPeriodo(100);
 "301
-[e = F3887 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 302: AumentarPeriodo(100);
-"302
 [e ( _AumentarPeriodo (1 -> -> 100 `i `uc ]
-[; ;Tecnica1.c: 303: if(cont2<9)cont2++;
-"303
-[e $ ! < -> F3893 `i -> 9 `i 418  ]
-[e ++ F3893 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 302: if(cont2<9)cont2++;
+"302
+[e $ ! < -> F3895 `i -> 9 `i 418  ]
+[e ++ F3895 -> -> 1 `i `uc ]
 [e $U 419  ]
-"304
+"303
 [e :U 418 ]
-[; ;Tecnica1.c: 304: else cont2 =0;
-[e = F3893 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 303: else cont2 =0;
+[e = F3895 -> -> 0 `i `uc ]
 [e :U 419 ]
-[; ;Tecnica1.c: 305: set_CURSOR(0x44);
-"305
+[; ;Tecnica1.c: 304: set_CURSOR(0x44);
+"304
 [e ( _set_CURSOR (1 -> -> 68 `i `uc ]
-[; ;Tecnica1.c: 306: char2LCD(cont2+0x30);
-"306
-[e ( _char2LCD (1 -> + -> F3893 `i -> 48 `i `uc ]
-"308
+[; ;Tecnica1.c: 305: char2LCD(cont2+0x30);
+"305
+[e ( _char2LCD (1 -> + -> F3895 `i -> 48 `i `uc ]
+"307
 }
 [e :U 416 ]
-[; ;Tecnica1.c: 308: }
-[; ;Tecnica1.c: 309: if(EstadoDeLosBotones == 128 && flag3==0){
-"309
-[e $ ! && == -> _EstadoDeLosBotones `i -> 128 `i == -> F3888 `i -> 0 `i 420  ]
+[; ;Tecnica1.c: 307: }
+[; ;Tecnica1.c: 308: if(EstadoDeLosBotones == 128 && flag3==0){
+"308
+[e $ ! && == -> _EstadoDeLosBotones `i -> 128 `i == -> F3890 `i -> 0 `i 420  ]
 {
-[; ;Tecnica1.c: 310: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
-"310
-[e $ ! ! != -> F3889 `i -> -> -> 0 `i `uc `i 421  ]
+[; ;Tecnica1.c: 309: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+"309
+[e $ ! ! != -> F3891 `i -> -> -> 0 `i `uc `i 421  ]
 {
 [e ( _clear_LCD ..  ]
-[e = F3889 -> -> 1 `i `uc ]
+[e = F3891 -> -> 1 `i `uc ]
 }
 [e :U 421 ]
-[; ;Tecnica1.c: 311: ret_HOME();
-"311
+[; ;Tecnica1.c: 310: ret_HOME();
+"310
 [e ( _ret_HOME ..  ]
-[; ;Tecnica1.c: 312: msg2LCD("BOT4");
-"312
+[; ;Tecnica1.c: 311: msg2LCD("BOT4");
+"311
 [e ( _msg2LCD (1 :s 7C ]
-[; ;Tecnica1.c: 313: flag3=1;
-"313
-[e = F3888 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 315: if(cont3<9)cont3++;
-"315
-[e $ ! < -> F3894 `i -> 9 `i 422  ]
-[e ++ F3894 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 312: flag3=1;
+"312
+[e = F3890 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 314: if(cont3<9)cont3++;
+"314
+[e $ ! < -> F3896 `i -> 9 `i 422  ]
+[e ++ F3896 -> -> 1 `i `uc ]
 [e $U 423  ]
-"316
+"315
 [e :U 422 ]
-[; ;Tecnica1.c: 316: else cont3 =0;
-[e = F3894 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 315: else cont3 =0;
+[e = F3896 -> -> 0 `i `uc ]
 [e :U 423 ]
-[; ;Tecnica1.c: 317: set_CURSOR(0x46);
-"317
+[; ;Tecnica1.c: 316: set_CURSOR(0x46);
+"316
 [e ( _set_CURSOR (1 -> -> 70 `i `uc ]
-[; ;Tecnica1.c: 318: char2LCD(cont3+0x30);
-"318
-[e ( _char2LCD (1 -> + -> F3894 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 320: obtener_ADC8();
-"320
+[; ;Tecnica1.c: 317: char2LCD(cont3+0x30);
+"317
+[e ( _char2LCD (1 -> + -> F3896 `i -> 48 `i `uc ]
+[; ;Tecnica1.c: 319: obtener_ADC8();
+"319
 [e ( _obtener_ADC8 ..  ]
-[; ;Tecnica1.c: 321: set_CURSOR(0x4A);
-"321
+[; ;Tecnica1.c: 320: set_CURSOR(0x4A);
+"320
 [e ( _set_CURSOR (1 -> -> 74 `i `uc ]
-[; ;Tecnica1.c: 322: char2LCD(ADRESH/100+0x30);
-"322
+[; ;Tecnica1.c: 321: char2LCD(ADRESH/100+0x30);
+"321
 [e ( _char2LCD (1 -> + / -> _ADRESH `i -> 100 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 323: char2LCD((ADRESH%100)/10+0x30);
-"323
+[; ;Tecnica1.c: 322: char2LCD((ADRESH%100)/10+0x30);
+"322
 [e ( _char2LCD (1 -> + / % -> _ADRESH `i -> 100 `i -> 10 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 324: char2LCD((ADRESH%10)+0x30);
-"324
+[; ;Tecnica1.c: 323: char2LCD((ADRESH%10)+0x30);
+"323
 [e ( _char2LCD (1 -> + % -> _ADRESH `i -> 10 `i -> 48 `i `uc ]
-[; ;Tecnica1.c: 325: msg2LCD("   **Frase escondida :-) **");
-"325
+[; ;Tecnica1.c: 324: msg2LCD("   **Frase escondida :-) **");
+"324
 [e ( _msg2LCD (1 :s 8C ]
-"326
+"325
 }
 [e :U 420 ]
-[; ;Tecnica1.c: 326: }
-[; ;Tecnica1.c: 327: if(EstadoDeLosBotones == (16+32) && (!flag0 || !flag1)){
-"327
-[e $ ! && == -> _EstadoDeLosBotones `i + -> 16 `i -> 32 `i || ! != -> F3885 `i -> -> -> 0 `i `uc `i ! != -> F3886 `i -> -> -> 0 `i `uc `i 424  ]
+[; ;Tecnica1.c: 325: }
+[; ;Tecnica1.c: 326: if(EstadoDeLosBotones == (16+32) && (!flag0 || !flag1)){
+"326
+[e $ ! && == -> _EstadoDeLosBotones `i + -> 16 `i -> 32 `i || ! != -> F3887 `i -> -> -> 0 `i `uc `i ! != -> F3888 `i -> -> -> 0 `i `uc `i 424  ]
 {
-[; ;Tecnica1.c: 328: Desplazar = 1;
+[; ;Tecnica1.c: 327: Desplazar = 1;
+"327
+[e = F3892 -> -> 1 `i `uc ]
+[; ;Tecnica1.c: 328: flag0=1;flag1=1;
 "328
-[e = F3890 -> -> 1 `i `uc ]
-[; ;Tecnica1.c: 329: flag0=1;flag1=1;
+[e = F3887 -> -> 1 `i `uc ]
+[e = F3888 -> -> 1 `i `uc ]
 "329
-[e = F3885 -> -> 1 `i `uc ]
-[e = F3886 -> -> 1 `i `uc ]
-"330
 }
 [e :U 424 ]
-[; ;Tecnica1.c: 330: }
-[; ;Tecnica1.c: 331: if(!EstadoDeLosBotones && flag3==1)flag3=0;
-"331
-[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3888 `i -> 1 `i 425  ]
-[e = F3888 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 329: }
+[; ;Tecnica1.c: 330: if(!EstadoDeLosBotones && flag3==1)flag3=0;
+"330
+[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3890 `i -> 1 `i 425  ]
+[e = F3890 -> -> 0 `i `uc ]
 [e :U 425 ]
-[; ;Tecnica1.c: 332: if(!EstadoDeLosBotones && flag2==1)flag2=0;
-"332
-[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3887 `i -> 1 `i 426  ]
-[e = F3887 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 331: if(!EstadoDeLosBotones && flag2==1)flag2=0;
+"331
+[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3889 `i -> 1 `i 426  ]
+[e = F3889 -> -> 0 `i `uc ]
 [e :U 426 ]
-[; ;Tecnica1.c: 333: if(!EstadoDeLosBotones && flag1==1)flag1=0;
-"333
-[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3886 `i -> 1 `i 427  ]
-[e = F3886 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 332: if(!EstadoDeLosBotones && flag1==1)flag1=0;
+"332
+[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3888 `i -> 1 `i 427  ]
+[e = F3888 -> -> 0 `i `uc ]
 [e :U 427 ]
-[; ;Tecnica1.c: 334: if(!EstadoDeLosBotones && flag0==1)flag0=0;
-"334
-[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3885 `i -> 1 `i 428  ]
-[e = F3885 -> -> 0 `i `uc ]
+[; ;Tecnica1.c: 333: if(!EstadoDeLosBotones && flag0==1)flag0=0;
+"333
+[e $ ! && ! != -> _EstadoDeLosBotones `i -> -> -> 0 `i `uc `i == -> F3887 `i -> 1 `i 428  ]
+[e = F3887 -> -> 0 `i `uc ]
 [e :U 428 ]
-[; ;Tecnica1.c: 336: if(Desplazar && !desplazar_tout){
-"336
-[e $ ! && != -> F3890 `i -> -> -> 0 `i `uc `i ! != _desplazar_tout -> 0 `i 429  ]
+[; ;Tecnica1.c: 335: if(Desplazar && !desplazar_tout){
+"335
+[e $ ! && != -> F3892 `i -> -> -> 0 `i `uc `i ! != _desplazar_tout -> 0 `i 429  ]
 {
-[; ;Tecnica1.c: 337: DesplazarIzquierda();
-"337
+[; ;Tecnica1.c: 336: DesplazarIzquierda();
+"336
 [e ( _DesplazarIzquierda ..  ]
-[; ;Tecnica1.c: 338: desplazar_tout=400;
-"338
+[; ;Tecnica1.c: 337: desplazar_tout=400;
+"337
 [e = _desplazar_tout -> 400 `i ]
-"340
+"339
 }
 [e :U 429 ]
+[; ;Tecnica1.c: 339: }
 [; ;Tecnica1.c: 340: }
-[; ;Tecnica1.c: 341: }
-"341
+"340
 [e :UE 407 ]
 }
-"342
+"341
 [v _tic_demo_shield2_1 `(v ~T0 @X0 1 ef ]
 {
-[; ;Tecnica1.c: 342: void tic_demo_shield2_1(void){
+[; ;Tecnica1.c: 341: void tic_demo_shield2_1(void){
 [e :U _tic_demo_shield2_1 ]
 [f ]
-[; ;Tecnica1.c: 343: if (desplazar_tout)desplazar_tout--;
-"343
+[; ;Tecnica1.c: 342: if (desplazar_tout)desplazar_tout--;
+"342
 [e $ ! != _desplazar_tout -> 0 `i 431  ]
 [e -- _desplazar_tout -> 1 `i ]
 [e :U 431 ]
-[; ;Tecnica1.c: 344: tic_debounce();
-"344
+[; ;Tecnica1.c: 343: tic_debounce();
+"343
 [e ( _tic_debounce ..  ]
-[; ;Tecnica1.c: 345: tic_LCD();
-"345
+[; ;Tecnica1.c: 344: tic_LCD();
+"344
 [e ( _tic_LCD ..  ]
-[; ;Tecnica1.c: 346: }
-"346
+[; ;Tecnica1.c: 345: }
+"345
 [e :UE 430 ]
 }
 [a 1C 72 111 108 97 32 65 108 117 109 110 111 115 0 ]

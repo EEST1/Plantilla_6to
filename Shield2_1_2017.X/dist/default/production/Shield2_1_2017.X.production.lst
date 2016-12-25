@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.40 build -251452761 
-                                                                                               Sun Dec 25 17:45:00 2016
+                                                                                               Sun Dec 25 18:19:33 2016
 
 Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010151
      1                           	processor	18F4550
@@ -656,7 +656,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
    642 ;;
    643 ;; *************** function _main *****************
    644 ;; Defined at:
-   645 ;;		line 22 in file "main.c"
+   645 ;;		line 23 in file "main.c"
    646 ;; Parameters:    Size  Location     Type
    647 ;;		None
    648 ;; Auto vars:     Size  Location     Type
@@ -690,13 +690,13 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
    676  007532                     _main:
    677                           	opt stack 23
    678                           
-   679                           ;main.c: 24: demo_shield2_1_INI();
+   679                           ;main.c: 25: demo_shield2_1_INI();
    680                           
    681                           ;incstack = 0
    682  007532  ECE0  F03B         	call	_demo_shield2_1_INI	;wreg free
    683  007536                     l19:
    684                           
-   685                           ;main.c: 27: demo_shield2_1();
+   685                           ;main.c: 28: demo_shield2_1();
    686  007536  EC9E  F03D         	call	_demo_shield2_1	;wreg free
    687  00753A  D7FD               	goto	l19
    688  00753C                     __end_of_main:
@@ -712,7 +712,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
    698                           
    699 ;; *************** function _demo_shield2_1_INI *****************
    700 ;; Defined at:
-   701 ;;		line 248 in file "Tecnica1.c"
+   701 ;;		line 247 in file "Tecnica1.c"
    702 ;; Parameters:    Size  Location     Type
    703 ;;		None
    704 ;; Auto vars:     Size  Location     Type
@@ -753,49 +753,49 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
    739  0077C0                     _demo_shield2_1_INI:
    740                           	opt stack 23
    741                           
-   742                           ;Tecnica1.c: 249: CalculoDeFrecuencia();
+   742                           ;Tecnica1.c: 248: CalculoDeFrecuencia();
    743                           
    744                           ;incstack = 0
    745  0077C0  ECCD  F03E         	call	_CalculoDeFrecuencia	;wreg free
    746                           
-   747                           ;Tecnica1.c: 250: PicIni21();
+   747                           ;Tecnica1.c: 249: PicIni21();
    748  0077C4  EC9A  F03B         	call	_PicIni21	;wreg free
    749                           
-   750                           ;Tecnica1.c: 251: TIMER0_INI();
+   750                           ;Tecnica1.c: 250: TIMER0_INI();
    751  0077C8  ECEE  F03A         	call	_TIMER0_INI	;wreg free
    752                           
-   753                           ;Tecnica1.c: 252: TIMER1_INI();
+   753                           ;Tecnica1.c: 251: TIMER1_INI();
    754  0077CC  EC38  F03B         	call	_TIMER1_INI	;wreg free
    755                           
-   756                           ;Tecnica1.c: 253: (INTCONbits.GIE = 1);
+   756                           ;Tecnica1.c: 252: (INTCONbits.GIE = 1);
    757  0077D0  8EF2               	bsf	intcon,7,c	;volatile
    758                           
-   759                           ;Tecnica1.c: 254: T0CONbits.TMR0ON = 1;
+   759                           ;Tecnica1.c: 253: T0CONbits.TMR0ON = 1;
    760  0077D2  8ED5               	bsf	4053,7,c	;volatile
    761                           
-   762                           ;Tecnica1.c: 255: T1CONbits.TMR1ON = 1;
+   762                           ;Tecnica1.c: 254: T1CONbits.TMR1ON = 1;
    763  0077D4  80CD               	bsf	4045,0,c	;volatile
    764                           
-   765                           ;Tecnica1.c: 256: LCD_init();
+   765                           ;Tecnica1.c: 255: LCD_init();
    766  0077D6  ECF1  F03C         	call	_LCD_init	;wreg free
    767                           
-   768                           ;Tecnica1.c: 257: clear_LCD();
+   768                           ;Tecnica1.c: 256: clear_LCD();
    769  0077DA  ECA9  F03A         	call	_clear_LCD	;wreg free
    770                           
-   771                           ;Tecnica1.c: 258: USART_INI();
+   771                           ;Tecnica1.c: 257: USART_INI();
    772  0077DE  EC6F  F03B         	call	_USART_INI	;wreg free
    773                           
-   774                           ;Tecnica1.c: 259: msg2LCD("Hola Alumnos");
+   774                           ;Tecnica1.c: 258: msg2LCD("Hola Alumnos");
    775  0077E2  0E41               	movlw	low STR_1
    776  0077E4  6E37               	movwf	msg2LCD@datos,c
    777  0077E6  0E20               	movlw	high STR_1
    778  0077E8  6E38               	movwf	msg2LCD@datos+1,c
    779  0077EA  ECB0  F03B         	call	_msg2LCD	;wreg free
    780                           
-   781                           ;Tecnica1.c: 261: TRISAbits.TRISA2 = 0;;
+   781                           ;Tecnica1.c: 260: TRISAbits.TRISA2 = 0;;
    782  0077EE  9492               	bcf	3986,2,c	;volatile
    783                           
-   784                           ;Tecnica1.c: 262: TRISAbits.TRISA3 = 0;;
+   784                           ;Tecnica1.c: 261: TRISAbits.TRISA3 = 0;;
    785  0077F0  9692               	bcf	3986,3,c	;volatile
    786  0077F2  0012               	return		;funcret
    787  0077F4                     __end_of_demo_shield2_1_INI:
@@ -1337,7 +1337,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1323                           
   1324 ;; *************** function _demo_shield2_1 *****************
   1325 ;; Defined at:
-  1326 ;;		line 265 in file "Tecnica1.c"
+  1326 ;;		line 264 in file "Tecnica1.c"
   1327 ;; Parameters:    Size  Location     Type
   1328 ;;		None
   1329 ;; Auto vars:     Size  Location     Type
@@ -1383,10 +1383,10 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1369  007B3C                     _demo_shield2_1:
   1370                           	opt stack 23
   1371                           
-  1372                           ;Tecnica1.c: 266: static unsigned char flag0=0,flag1=0,flag2=0,flag3=0,PrimeraVez=0,Desp
+  1372                           ;Tecnica1.c: 265: static unsigned char flag0=0,flag1=0,flag2=0,flag3=0,PrimeraVez=0,Desp
       +                          lazar=0;
-  1373                           ;Tecnica1.c: 267: static unsigned char cont=0,cont1,cont2,cont3;
-  1374                           ;Tecnica1.c: 269: if(EstadoDeLosBotones == 16 && flag0==0){
+  1373                           ;Tecnica1.c: 266: static unsigned char cont=0,cont1,cont2,cont3;
+  1374                           ;Tecnica1.c: 268: if(EstadoDeLosBotones == 16 && flag0==0){
   1375                           
   1376                           ;incstack = 0
   1377  007B3C  0E10               	movlw	16
@@ -1397,7 +1397,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1382  007B46  A4D8               	btfss	status,2,c
   1383  007B48  D036               	goto	l2901
   1384                           
-  1385                           ;Tecnica1.c: 270: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+  1385                           ;Tecnica1.c: 269: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
   1386  007B4A  501B               	movf	demo_shield2_1@PrimeraVez,w,c
   1387  007B4C  A4D8               	btfss	status,2,c
   1388  007B4E  D004               	goto	l2873
@@ -1406,29 +1406,29 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1391  007B56  6E1B               	movwf	demo_shield2_1@PrimeraVez,c
   1392  007B58                     l2873:
   1393                           
-  1394                           ;Tecnica1.c: 271: ret_HOME();
+  1394                           ;Tecnica1.c: 270: ret_HOME();
   1395  007B58  ECAF  F03A         	call	_ret_HOME	;wreg free
   1396                           
-  1397                           ;Tecnica1.c: 272: msg2LCD("BOT1");
+  1397                           ;Tecnica1.c: 271: msg2LCD("BOT1");
   1398  007B5C  0E54               	movlw	low STR_2
   1399  007B5E  6E37               	movwf	msg2LCD@datos,c
   1400  007B60  0E20               	movlw	high STR_2
   1401  007B62  6E38               	movwf	msg2LCD@datos+1,c
   1402  007B64  ECB0  F03B         	call	_msg2LCD	;wreg free
   1403                           
-  1404                           ;Tecnica1.c: 273: flag0=1;
+  1404                           ;Tecnica1.c: 272: flag0=1;
   1405  007B68  0E01               	movlw	1
   1406  007B6A  6E20               	movwf	demo_shield2_1@flag0,c
   1407                           
-  1408                           ;Tecnica1.c: 274: Desplazar = 0;
+  1408                           ;Tecnica1.c: 273: Desplazar = 0;
   1409  007B6C  0E00               	movlw	0
   1410  007B6E  6E1A               	movwf	demo_shield2_1@Desplazar,c
   1411                           
-  1412                           ;Tecnica1.c: 275: AumentarPeriodo(10);
+  1412                           ;Tecnica1.c: 274: AumentarPeriodo(10);
   1413  007B70  0E0A               	movlw	10
   1414  007B72  EC08  F03B         	call	_AumentarPeriodo
   1415                           
-  1416                           ;Tecnica1.c: 276: if(cont<9)cont++;
+  1416                           ;Tecnica1.c: 275: if(cont<9)cont++;
   1417  007B76  0E09               	movlw	9
   1418  007B78  601C               	cpfslt	demo_shield2_1@cont,c
   1419  007B7A  D002               	goto	l2887
@@ -1436,21 +1436,21 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1421  007B7E  D002               	goto	l2889
   1422  007B80                     l2887:
   1423                           
-  1424                           ;Tecnica1.c: 277: else cont =0;
+  1424                           ;Tecnica1.c: 276: else cont =0;
   1425  007B80  0E00               	movlw	0
   1426  007B82  6E1C               	movwf	demo_shield2_1@cont,c
   1427  007B84                     l2889:
   1428                           
-  1429                           ;Tecnica1.c: 278: set_CURSOR(0x40);
+  1429                           ;Tecnica1.c: 277: set_CURSOR(0x40);
   1430  007B84  0E40               	movlw	64
   1431  007B86  ECDA  F03A         	call	_set_CURSOR
   1432                           
-  1433                           ;Tecnica1.c: 279: char2LCD(cont+0x30);
+  1433                           ;Tecnica1.c: 278: char2LCD(cont+0x30);
   1434  007B8A  501C               	movf	demo_shield2_1@cont,w,c
   1435  007B8C  0F30               	addlw	48
   1436  007B8E  ECC3  F03A         	call	_char2LCD
   1437                           
-  1438                           ;Tecnica1.c: 280: informar("BOT1 ",sizeof("BOT1 "));
+  1438                           ;Tecnica1.c: 279: informar("BOT1 ",sizeof("BOT1 "));
   1439  007B92  0E4E               	movlw	low STR_3
   1440  007B94  6E36               	movwf	informar@dato,c
   1441  007B96  0E20               	movlw	high STR_3
@@ -1459,22 +1459,22 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1444  007B9C  6E38               	movwf	informar@longitud,c
   1445  007B9E  ECFA  F03B         	call	_informar	;wreg free
   1446                           
-  1447                           ;Tecnica1.c: 281: transmitir(cont+0x30);
+  1447                           ;Tecnica1.c: 280: transmitir(cont+0x30);
   1448  007BA2  501C               	movf	demo_shield2_1@cont,w,c
   1449  007BA4  0F30               	addlw	48
   1450  007BA6  ECD2  F03A         	call	_transmitir
   1451                           
-  1452                           ;Tecnica1.c: 282: transmitir('\n');
+  1452                           ;Tecnica1.c: 281: transmitir('\n');
   1453  007BAA  0E0A               	movlw	10
   1454  007BAC  ECD2  F03A         	call	_transmitir
   1455                           
-  1456                           ;Tecnica1.c: 283: transmitir('\r');
+  1456                           ;Tecnica1.c: 282: transmitir('\r');
   1457  007BB0  0E0D               	movlw	13
   1458  007BB2  ECD2  F03A         	call	_transmitir
   1459  007BB6                     l2901:
   1460                           
-  1461                           ;Tecnica1.c: 284: }
-  1462                           ;Tecnica1.c: 285: if(EstadoDeLosBotones == 32 && !flag1){
+  1461                           ;Tecnica1.c: 283: }
+  1462                           ;Tecnica1.c: 284: if(EstadoDeLosBotones == 32 && !flag1){
   1463  007BB6  0E20               	movlw	32
   1464  007BB8  180A               	xorwf	_EstadoDeLosBotones,w,c
   1465  007BBA  A4D8               	btfss	status,2,c
@@ -1483,7 +1483,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1468  007BC0  A4D8               	btfss	status,2,c
   1469  007BC2  D022               	goto	l2929
   1470                           
-  1471                           ;Tecnica1.c: 286: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+  1471                           ;Tecnica1.c: 285: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
   1472  007BC4  501B               	movf	demo_shield2_1@PrimeraVez,w,c
   1473  007BC6  A4D8               	btfss	status,2,c
   1474  007BC8  D004               	goto	l2911
@@ -1492,25 +1492,25 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1477  007BD0  6E1B               	movwf	demo_shield2_1@PrimeraVez,c
   1478  007BD2                     l2911:
   1479                           
-  1480                           ;Tecnica1.c: 287: ret_HOME();
+  1480                           ;Tecnica1.c: 286: ret_HOME();
   1481  007BD2  ECAF  F03A         	call	_ret_HOME	;wreg free
   1482                           
-  1483                           ;Tecnica1.c: 288: msg2LCD("BOT2");
+  1483                           ;Tecnica1.c: 287: msg2LCD("BOT2");
   1484  007BD6  0E59               	movlw	low STR_5
   1485  007BD8  6E37               	movwf	msg2LCD@datos,c
   1486  007BDA  0E20               	movlw	high STR_5
   1487  007BDC  6E38               	movwf	msg2LCD@datos+1,c
   1488  007BDE  ECB0  F03B         	call	_msg2LCD	;wreg free
   1489                           
-  1490                           ;Tecnica1.c: 289: flag1=1;
+  1490                           ;Tecnica1.c: 288: flag1=1;
   1491  007BE2  0E01               	movlw	1
   1492  007BE4  6E21               	movwf	demo_shield2_1@flag1,c
   1493                           
-  1494                           ;Tecnica1.c: 290: DisminuirPeriodo(10);
+  1494                           ;Tecnica1.c: 289: DisminuirPeriodo(10);
   1495  007BE6  0E0A               	movlw	10
   1496  007BE8  EC28  F03B         	call	_DisminuirPeriodo
   1497                           
-  1498                           ;Tecnica1.c: 291: if(cont1<9)cont1++;
+  1498                           ;Tecnica1.c: 290: if(cont1<9)cont1++;
   1499  007BEC  0E09               	movlw	9
   1500  007BEE  601D               	cpfslt	demo_shield2_1@cont1,c
   1501  007BF0  D002               	goto	l2923
@@ -1518,23 +1518,23 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1503  007BF4  D002               	goto	l2925
   1504  007BF6                     l2923:
   1505                           
-  1506                           ;Tecnica1.c: 292: else cont1 =0;
+  1506                           ;Tecnica1.c: 291: else cont1 =0;
   1507  007BF6  0E00               	movlw	0
   1508  007BF8  6E1D               	movwf	demo_shield2_1@cont1,c
   1509  007BFA                     l2925:
   1510                           
-  1511                           ;Tecnica1.c: 293: set_CURSOR(0x42);
+  1511                           ;Tecnica1.c: 292: set_CURSOR(0x42);
   1512  007BFA  0E42               	movlw	66
   1513  007BFC  ECDA  F03A         	call	_set_CURSOR
   1514                           
-  1515                           ;Tecnica1.c: 294: char2LCD(cont1+0x30);
+  1515                           ;Tecnica1.c: 293: char2LCD(cont1+0x30);
   1516  007C00  501D               	movf	demo_shield2_1@cont1,w,c
   1517  007C02  0F30               	addlw	48
   1518  007C04  ECC3  F03A         	call	_char2LCD
   1519  007C08                     l2929:
   1520                           
-  1521                           ;Tecnica1.c: 296: }
-  1522                           ;Tecnica1.c: 297: if(EstadoDeLosBotones == 64 && flag2==0){
+  1521                           ;Tecnica1.c: 295: }
+  1522                           ;Tecnica1.c: 296: if(EstadoDeLosBotones == 64 && flag2==0){
   1523  007C08  0E40               	movlw	64
   1524  007C0A  180A               	xorwf	_EstadoDeLosBotones,w,c
   1525  007C0C  A4D8               	btfss	status,2,c
@@ -1543,7 +1543,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1528  007C12  A4D8               	btfss	status,2,c
   1529  007C14  D022               	goto	l2957
   1530                           
-  1531                           ;Tecnica1.c: 298: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+  1531                           ;Tecnica1.c: 297: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
   1532  007C16  501B               	movf	demo_shield2_1@PrimeraVez,w,c
   1533  007C18  A4D8               	btfss	status,2,c
   1534  007C1A  D004               	goto	l2939
@@ -1552,25 +1552,25 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1537  007C22  6E1B               	movwf	demo_shield2_1@PrimeraVez,c
   1538  007C24                     l2939:
   1539                           
-  1540                           ;Tecnica1.c: 299: ret_HOME();
+  1540                           ;Tecnica1.c: 298: ret_HOME();
   1541  007C24  ECAF  F03A         	call	_ret_HOME	;wreg free
   1542                           
-  1543                           ;Tecnica1.c: 300: msg2LCD("BOT3");
+  1543                           ;Tecnica1.c: 299: msg2LCD("BOT3");
   1544  007C28  0E5E               	movlw	low STR_6
   1545  007C2A  6E37               	movwf	msg2LCD@datos,c
   1546  007C2C  0E20               	movlw	high STR_6
   1547  007C2E  6E38               	movwf	msg2LCD@datos+1,c
   1548  007C30  ECB0  F03B         	call	_msg2LCD	;wreg free
   1549                           
-  1550                           ;Tecnica1.c: 301: flag2=1;
+  1550                           ;Tecnica1.c: 300: flag2=1;
   1551  007C34  0E01               	movlw	1
   1552  007C36  6E22               	movwf	demo_shield2_1@flag2,c
   1553                           
-  1554                           ;Tecnica1.c: 302: AumentarPeriodo(100);
+  1554                           ;Tecnica1.c: 301: AumentarPeriodo(100);
   1555  007C38  0E64               	movlw	100
   1556  007C3A  EC08  F03B         	call	_AumentarPeriodo
   1557                           
-  1558                           ;Tecnica1.c: 303: if(cont2<9)cont2++;
+  1558                           ;Tecnica1.c: 302: if(cont2<9)cont2++;
   1559  007C3E  0E09               	movlw	9
   1560  007C40  601E               	cpfslt	demo_shield2_1@cont2,c
   1561  007C42  D002               	goto	l2951
@@ -1578,23 +1578,23 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1563  007C46  D002               	goto	l2953
   1564  007C48                     l2951:
   1565                           
-  1566                           ;Tecnica1.c: 304: else cont2 =0;
+  1566                           ;Tecnica1.c: 303: else cont2 =0;
   1567  007C48  0E00               	movlw	0
   1568  007C4A  6E1E               	movwf	demo_shield2_1@cont2,c
   1569  007C4C                     l2953:
   1570                           
-  1571                           ;Tecnica1.c: 305: set_CURSOR(0x44);
+  1571                           ;Tecnica1.c: 304: set_CURSOR(0x44);
   1572  007C4C  0E44               	movlw	68
   1573  007C4E  ECDA  F03A         	call	_set_CURSOR
   1574                           
-  1575                           ;Tecnica1.c: 306: char2LCD(cont2+0x30);
+  1575                           ;Tecnica1.c: 305: char2LCD(cont2+0x30);
   1576  007C52  501E               	movf	demo_shield2_1@cont2,w,c
   1577  007C54  0F30               	addlw	48
   1578  007C56  ECC3  F03A         	call	_char2LCD
   1579  007C5A                     l2957:
   1580                           
-  1581                           ;Tecnica1.c: 308: }
-  1582                           ;Tecnica1.c: 309: if(EstadoDeLosBotones == 128 && flag3==0){
+  1581                           ;Tecnica1.c: 307: }
+  1582                           ;Tecnica1.c: 308: if(EstadoDeLosBotones == 128 && flag3==0){
   1583  007C5A  0E80               	movlw	128
   1584  007C5C  180A               	xorwf	_EstadoDeLosBotones,w,c
   1585  007C5E  A4D8               	btfss	status,2,c
@@ -1603,7 +1603,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1588  007C64  A4D8               	btfss	status,2,c
   1589  007C66  D05B               	goto	l2995
   1590                           
-  1591                           ;Tecnica1.c: 310: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
+  1591                           ;Tecnica1.c: 309: if(!PrimeraVez){clear_LCD();PrimeraVez=1;}
   1592  007C68  501B               	movf	demo_shield2_1@PrimeraVez,w,c
   1593  007C6A  A4D8               	btfss	status,2,c
   1594  007C6C  D004               	goto	l2967
@@ -1612,21 +1612,21 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1597  007C74  6E1B               	movwf	demo_shield2_1@PrimeraVez,c
   1598  007C76                     l2967:
   1599                           
-  1600                           ;Tecnica1.c: 311: ret_HOME();
+  1600                           ;Tecnica1.c: 310: ret_HOME();
   1601  007C76  ECAF  F03A         	call	_ret_HOME	;wreg free
   1602                           
-  1603                           ;Tecnica1.c: 312: msg2LCD("BOT4");
+  1603                           ;Tecnica1.c: 311: msg2LCD("BOT4");
   1604  007C7A  0E63               	movlw	low STR_7
   1605  007C7C  6E37               	movwf	msg2LCD@datos,c
   1606  007C7E  0E20               	movlw	high STR_7
   1607  007C80  6E38               	movwf	msg2LCD@datos+1,c
   1608  007C82  ECB0  F03B         	call	_msg2LCD	;wreg free
   1609                           
-  1610                           ;Tecnica1.c: 313: flag3=1;
+  1610                           ;Tecnica1.c: 312: flag3=1;
   1611  007C86  0E01               	movlw	1
   1612  007C88  6E23               	movwf	demo_shield2_1@flag3,c
   1613                           
-  1614                           ;Tecnica1.c: 315: if(cont3<9)cont3++;
+  1614                           ;Tecnica1.c: 314: if(cont3<9)cont3++;
   1615  007C8A  0E09               	movlw	9
   1616  007C8C  601F               	cpfslt	demo_shield2_1@cont3,c
   1617  007C8E  D002               	goto	l2977
@@ -1634,28 +1634,28 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1619  007C92  D002               	goto	l2979
   1620  007C94                     l2977:
   1621                           
-  1622                           ;Tecnica1.c: 316: else cont3 =0;
+  1622                           ;Tecnica1.c: 315: else cont3 =0;
   1623  007C94  0E00               	movlw	0
   1624  007C96  6E1F               	movwf	demo_shield2_1@cont3,c
   1625  007C98                     l2979:
   1626                           
-  1627                           ;Tecnica1.c: 317: set_CURSOR(0x46);
+  1627                           ;Tecnica1.c: 316: set_CURSOR(0x46);
   1628  007C98  0E46               	movlw	70
   1629  007C9A  ECDA  F03A         	call	_set_CURSOR
   1630                           
-  1631                           ;Tecnica1.c: 318: char2LCD(cont3+0x30);
+  1631                           ;Tecnica1.c: 317: char2LCD(cont3+0x30);
   1632  007C9E  501F               	movf	demo_shield2_1@cont3,w,c
   1633  007CA0  0F30               	addlw	48
   1634  007CA2  ECC3  F03A         	call	_char2LCD
   1635                           
-  1636                           ;Tecnica1.c: 320: obtener_ADC8();
+  1636                           ;Tecnica1.c: 319: obtener_ADC8();
   1637  007CA6  EC84  F03B         	call	_obtener_ADC8	;wreg free
   1638                           
-  1639                           ;Tecnica1.c: 321: set_CURSOR(0x4A);
+  1639                           ;Tecnica1.c: 320: set_CURSOR(0x4A);
   1640  007CAA  0E4A               	movlw	74
   1641  007CAC  ECDA  F03A         	call	_set_CURSOR
   1642                           
-  1643                           ;Tecnica1.c: 322: char2LCD(ADRESH/100+0x30);
+  1643                           ;Tecnica1.c: 321: char2LCD(ADRESH/100+0x30);
   1644  007CB0  CFC4 F03B          	movff	4036,___awdiv@dividend	;volatile
   1645  007CB4  6A3C               	clrf	___awdiv@dividend+1,c
   1646  007CB6  0E00               	movlw	0
@@ -1667,7 +1667,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1652  007CC4  0F30               	addlw	48
   1653  007CC6  ECC3  F03A         	call	_char2LCD
   1654                           
-  1655                           ;Tecnica1.c: 323: char2LCD((ADRESH%100)/10+0x30);
+  1655                           ;Tecnica1.c: 322: char2LCD((ADRESH%100)/10+0x30);
   1656  007CCA  0E00               	movlw	0
   1657  007CCC  6E38               	movwf	___awmod@divisor+1,c
   1658  007CCE  0E64               	movlw	100
@@ -1686,7 +1686,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1671  007CF2  0F30               	addlw	48
   1672  007CF4  ECC3  F03A         	call	_char2LCD
   1673                           
-  1674                           ;Tecnica1.c: 324: char2LCD((ADRESH%10)+0x30);
+  1674                           ;Tecnica1.c: 323: char2LCD((ADRESH%10)+0x30);
   1675  007CF8  CFC4 F035          	movff	4036,___awmod@dividend	;volatile
   1676  007CFC  6A36               	clrf	___awmod@dividend+1,c
   1677  007CFE  0E00               	movlw	0
@@ -1698,7 +1698,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1683  007D0C  0F30               	addlw	48
   1684  007D0E  ECC3  F03A         	call	_char2LCD
   1685                           
-  1686                           ;Tecnica1.c: 325: msg2LCD("   **Frase escondida :-) **");
+  1686                           ;Tecnica1.c: 324: msg2LCD("   **Frase escondida :-) **");
   1687  007D12  0E25               	movlw	low STR_8
   1688  007D14  6E37               	movwf	msg2LCD@datos,c
   1689  007D16  0E20               	movlw	high STR_8
@@ -1706,8 +1706,8 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1691  007D1A  ECB0  F03B         	call	_msg2LCD	;wreg free
   1692  007D1E                     l2995:
   1693                           
-  1694                           ;Tecnica1.c: 326: }
-  1695                           ;Tecnica1.c: 327: if(EstadoDeLosBotones == (16+32) && (!flag0 || !flag1)){
+  1694                           ;Tecnica1.c: 325: }
+  1695                           ;Tecnica1.c: 326: if(EstadoDeLosBotones == (16+32) && (!flag0 || !flag1)){
   1696  007D1E  0E30               	movlw	48
   1697  007D20  180A               	xorwf	_EstadoDeLosBotones,w,c
   1698  007D22  A4D8               	btfss	status,2,c
@@ -1720,19 +1720,19 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1705  007D30  D006               	goto	l487
   1706  007D32                     l3001:
   1707                           
-  1708                           ;Tecnica1.c: 328: Desplazar = 1;
+  1708                           ;Tecnica1.c: 327: Desplazar = 1;
   1709  007D32  0E01               	movlw	1
   1710  007D34  6E1A               	movwf	demo_shield2_1@Desplazar,c
   1711                           
-  1712                           ;Tecnica1.c: 329: flag0=1;flag1=1;
+  1712                           ;Tecnica1.c: 328: flag0=1;flag1=1;
   1713  007D36  0E01               	movlw	1
   1714  007D38  6E20               	movwf	demo_shield2_1@flag0,c
   1715  007D3A  0E01               	movlw	1
   1716  007D3C  6E21               	movwf	demo_shield2_1@flag1,c
   1717  007D3E                     l487:
   1718                           
-  1719                           ;Tecnica1.c: 330: }
-  1720                           ;Tecnica1.c: 331: if(!EstadoDeLosBotones && flag3==1)flag3=0;
+  1719                           ;Tecnica1.c: 329: }
+  1720                           ;Tecnica1.c: 330: if(!EstadoDeLosBotones && flag3==1)flag3=0;
   1721  007D3E  500A               	movf	_EstadoDeLosBotones,w,c
   1722  007D40  A4D8               	btfss	status,2,c
   1723  007D42  D005               	goto	l490
@@ -1743,7 +1743,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1728  007D4C  6E23               	movwf	demo_shield2_1@flag3,c
   1729  007D4E                     l490:
   1730                           
-  1731                           ;Tecnica1.c: 332: if(!EstadoDeLosBotones && flag2==1)flag2=0;
+  1731                           ;Tecnica1.c: 331: if(!EstadoDeLosBotones && flag2==1)flag2=0;
   1732  007D4E  500A               	movf	_EstadoDeLosBotones,w,c
   1733  007D50  A4D8               	btfss	status,2,c
   1734  007D52  D005               	goto	l491
@@ -1754,7 +1754,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1739  007D5C  6E22               	movwf	demo_shield2_1@flag2,c
   1740  007D5E                     l491:
   1741                           
-  1742                           ;Tecnica1.c: 333: if(!EstadoDeLosBotones && flag1==1)flag1=0;
+  1742                           ;Tecnica1.c: 332: if(!EstadoDeLosBotones && flag1==1)flag1=0;
   1743  007D5E  500A               	movf	_EstadoDeLosBotones,w,c
   1744  007D60  A4D8               	btfss	status,2,c
   1745  007D62  D005               	goto	l492
@@ -1765,7 +1765,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1750  007D6C  6E21               	movwf	demo_shield2_1@flag1,c
   1751  007D6E                     l492:
   1752                           
-  1753                           ;Tecnica1.c: 334: if(!EstadoDeLosBotones && flag0==1)flag0=0;
+  1753                           ;Tecnica1.c: 333: if(!EstadoDeLosBotones && flag0==1)flag0=0;
   1754  007D6E  500A               	movf	_EstadoDeLosBotones,w,c
   1755  007D70  A4D8               	btfss	status,2,c
   1756  007D72  D005               	goto	l493
@@ -1776,7 +1776,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1761  007D7C  6E20               	movwf	demo_shield2_1@flag0,c
   1762  007D7E                     l493:
   1763                           
-  1764                           ;Tecnica1.c: 336: if(Desplazar && !desplazar_tout){
+  1764                           ;Tecnica1.c: 335: if(Desplazar && !desplazar_tout){
   1765  007D7E  501A               	movf	demo_shield2_1@Desplazar,w,c
   1766  007D80  B4D8               	btfsc	status,2,c
   1767  007D82  0012               	return	
@@ -1785,10 +1785,10 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   1770  007D88  A4D8               	btfss	status,2,c
   1771  007D8A  0012               	return	
   1772                           
-  1773                           ;Tecnica1.c: 337: DesplazarIzquierda();
+  1773                           ;Tecnica1.c: 336: DesplazarIzquierda();
   1774  007D8C  ECA3  F03A         	call	_DesplazarIzquierda	;wreg free
   1775                           
-  1776                           ;Tecnica1.c: 338: desplazar_tout=400;
+  1776                           ;Tecnica1.c: 337: desplazar_tout=400;
   1777  007D90  0E01               	movlw	1
   1778  007D92  6E06               	movwf	_desplazar_tout+1,c
   1779  007D94  0E90               	movlw	144
@@ -3822,7 +3822,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   3807                           
   3808 ;; *************** function _myISR *****************
   3809 ;; Defined at:
-  3810 ;;		line 33 in file "main.c"
+  3810 ;;		line 34 in file "main.c"
   3811 ;; Parameters:    Size  Location     Type
   3812 ;;		None
   3813 ;; Auto vars:     Size  Location     Type
@@ -3893,21 +3893,21 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   3878  00798E  CFF8 F033          	movff	tblptru,??_myISR+12
   3879  007992  CFF5 F034          	movff	tablat,??_myISR+13
   3880                           
-  3881                           ;main.c: 35: if(TMR0IF){
+  3881                           ;main.c: 36: if(TMR0IF){
   3882  007996  A4F2               	btfss	intcon,2,c	;volatile
   3883  007998  D006               	goto	i2l26
   3884                           
-  3885                           ;main.c: 36: INTCONbits.TMR0IF = 0;
+  3885                           ;main.c: 37: INTCONbits.TMR0IF = 0;
   3886  00799A  94F2               	bcf	intcon,2,c	;volatile
   3887                           
-  3888                           ;main.c: 37: TMR0L = 209;
+  3888                           ;main.c: 38: TMR0L = 209;
   3889  00799C  0ED1               	movlw	209
   3890  00799E  6ED6               	movwf	4054,c	;volatile
   3891                           
-  3892                           ;main.c: 38: TMR0H = 0xFF;
+  3892                           ;main.c: 39: TMR0H = 0xFF;
   3893  0079A0  68D7               	setf	4055,c	;volatile
   3894                           
-  3895                           ;main.c: 42: tic_demo_shield2_1();
+  3895                           ;main.c: 43: tic_demo_shield2_1();
   3896  0079A2  ECE2  F03A         	call	_tic_demo_shield2_1	;wreg free
   3897  0079A6                     i2l26:
   3898  0079A6  C034  FFF5         	movff	??_myISR+13,tablat
@@ -3950,7 +3950,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   3935                           
   3936 ;; *************** function _tic_demo_shield2_1 *****************
   3937 ;; Defined at:
-  3938 ;;		line 342 in file "Tecnica1.c"
+  3938 ;;		line 341 in file "Tecnica1.c"
   3939 ;; Parameters:    Size  Location     Type
   3940 ;;		None
   3941 ;; Auto vars:     Size  Location     Type
@@ -3985,7 +3985,7 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   3970  0075C4                     _tic_demo_shield2_1:
   3971                           	opt stack 23
   3972                           
-  3973                           ;Tecnica1.c: 343: if (desplazar_tout)desplazar_tout--;
+  3973                           ;Tecnica1.c: 342: if (desplazar_tout)desplazar_tout--;
   3974                           
   3975                           ;incstack = 0
   3976  0075C4  5005               	movf	_desplazar_tout,w,c
@@ -3997,10 +3997,10 @@ Microchip Technology Omniscient Code Generator v1.40 (Free mode) build 201612010
   3982  0075D0  0606               	decf	_desplazar_tout+1,f,c
   3983  0075D2                     i2l1881:
   3984                           
-  3985                           ;Tecnica1.c: 344: tic_debounce();
+  3985                           ;Tecnica1.c: 343: tic_debounce();
   3986  0075D2  ECFA  F03A         	call	_tic_debounce	;wreg free
   3987                           
-  3988                           ;Tecnica1.c: 345: tic_LCD();
+  3988                           ;Tecnica1.c: 344: tic_LCD();
   3989  0075D6  ECCA  F03A         	call	_tic_LCD	;wreg free
   3990  0075DA  0012               	return		;funcret
   3991  0075DC                     __end_of_tic_demo_shield2_1:
@@ -4703,7 +4703,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.40 build -251452761 
-Symbol Table                                                                                   Sun Dec 25 17:45:00 2016
+Symbol Table                                                                                   Sun Dec 25 18:19:33 2016
 
     __size_of_AumentarPeriodo 0020                            l19 7536                  ___awdiv@sign 0040  
                  __CFG_BOR$ON 000000           ___wmul@multiplicand 0062                   __CFG_BORV$3 000000  
