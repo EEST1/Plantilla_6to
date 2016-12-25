@@ -3539,7 +3539,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd.h: 27: void set_CURSOR(unsigned char);
 [; ;lcd.h: 28: void tic_LCD(void);
 [; ;lcd.h: 29: void DesplazarIzquierda(void);
-[; ;ConfShield2_1.h: 63: void PicIni21(void);
+[; ;ConfShield2_1.h: 64: void PicIni21(void);
 "3 ConfShield2_1.c
 [v _PicIni21 `(v ~T0 @X0 1 ef ]
 {

@@ -20,6 +20,7 @@
 #define BOT3    PORTBbits.RB6
 #define BOT4    PORTBbits.RB7
 #define BOOT    PORTBbits.RB4
+#define PULSADORES  (PORTB^0xF0)&0xF0
 
 /*Display LCD ****************************************************************/
 #define DISPLAY LATD

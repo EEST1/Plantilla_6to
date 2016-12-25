@@ -4792,10 +4792,10 @@ void set_CURSOR(unsigned char);
 void tic_LCD(void);
 void DesplazarIzquierda(void);
 
-# 63 "ConfShield2_1.h"
+# 64 "ConfShield2_1.h"
 void PicIni21(void);
 
-# 31 "Tecnica1.h"
+# 23 "Tecnica1.h"
 unsigned char EstadoDeLosBotones;
 
 
@@ -4821,14 +4821,7 @@ unsigned char obtener_ADC8(void);
 void informar(const char *dato, char longitud);
 void transmitir(unsigned char Dato);
 
-
-
-void demo_shield2_1_INI(void);
-void demo_shield2_1(void);
-
-
-
-
+# 52
 void tic_debounce(void);
 void tic_timer1(void);
 
@@ -4837,17 +4830,14 @@ void tic_demo_shield2_1(void);
 
 
 
-
 void demo_shield2_1_INI(void);
 void demo_shield2_1(void);
 
-# 23 "main.c"
+# 18 "main.c"
 void main(void) {
 
-demo_shield2_1_INI();
-
 while(1){
-demo_shield2_1();
+
 
 }
 }
@@ -4861,6 +4851,6 @@ TMR0H = 0xFF;
 
 
 
-tic_demo_shield2_1();
+
 }
 }

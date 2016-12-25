@@ -1,9 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"58 Tecnica1.h
-[v _demo_shield2_1_INI `(v ~T0 @X0 0 ef ]
-"59
-[v _demo_shield2_1 `(v ~T0 @X0 0 ef ]
 "10022 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f4550.h
 [v _TMR0IF `Vb ~T0 @X0 0 e@32658 ]
 "8450
@@ -24,8 +20,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
 "8045
 [v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
-"68 Tecnica1.h
-[v _tic_demo_shield2_1 `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3598,84 +3592,73 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd.h: 27: void set_CURSOR(unsigned char);
 [; ;lcd.h: 28: void tic_LCD(void);
 [; ;lcd.h: 29: void DesplazarIzquierda(void);
-[; ;ConfShield2_1.h: 63: void PicIni21(void);
-"31 Tecnica1.h
+[; ;ConfShield2_1.h: 64: void PicIni21(void);
+"23 Tecnica1.h
 [v _EstadoDeLosBotones `uc ~T0 @X0 1 e ]
-[; ;Tecnica1.h: 31: unsigned char EstadoDeLosBotones;
-[; ;Tecnica1.h: 36: unsigned char debounce(unsigned char sample);
-[; ;Tecnica1.h: 39: void CalculoDeFrecuencia(void);
-[; ;Tecnica1.h: 40: void AumentarPeriodo(unsigned char);
-[; ;Tecnica1.h: 41: void DisminuirPeriodo(unsigned char);
-[; ;Tecnica1.h: 45: void TIMER0_INI(void);
-[; ;Tecnica1.h: 46: void TIMER1_INI(void);
-[; ;Tecnica1.h: 47: void PWM_INI(void);
-[; ;Tecnica1.h: 48: void USART_INI (void);
-[; ;Tecnica1.h: 51: void pwm_set(unsigned char periodo, unsigned char duty );
-[; ;Tecnica1.h: 52: unsigned char obtener_ADC8(void);
-[; ;Tecnica1.h: 53: void informar(const char *dato, char longitud);
-[; ;Tecnica1.h: 54: void transmitir(unsigned char Dato);
-[; ;Tecnica1.h: 58: void demo_shield2_1_INI(void);
-[; ;Tecnica1.h: 59: void demo_shield2_1(void);
-[; ;Tecnica1.h: 64: void tic_debounce(void);
-[; ;Tecnica1.h: 65: void tic_timer1(void);
-[; ;Tecnica1.h: 68: void tic_demo_shield2_1(void);
-[; ;Tecnica1.h: 73: void demo_shield2_1_INI(void);
-[; ;Tecnica1.h: 74: void demo_shield2_1(void);
-"23 main.c
+[; ;Tecnica1.h: 23: unsigned char EstadoDeLosBotones;
+[; ;Tecnica1.h: 28: unsigned char debounce(unsigned char sample);
+[; ;Tecnica1.h: 31: void CalculoDeFrecuencia(void);
+[; ;Tecnica1.h: 32: void AumentarPeriodo(unsigned char);
+[; ;Tecnica1.h: 33: void DisminuirPeriodo(unsigned char);
+[; ;Tecnica1.h: 37: void TIMER0_INI(void);
+[; ;Tecnica1.h: 38: void TIMER1_INI(void);
+[; ;Tecnica1.h: 39: void PWM_INI(void);
+[; ;Tecnica1.h: 40: void USART_INI (void);
+[; ;Tecnica1.h: 43: void pwm_set(unsigned char periodo, unsigned char duty );
+[; ;Tecnica1.h: 44: unsigned char obtener_ADC8(void);
+[; ;Tecnica1.h: 45: void informar(const char *dato, char longitud);
+[; ;Tecnica1.h: 46: void transmitir(unsigned char Dato);
+[; ;Tecnica1.h: 52: void tic_debounce(void);
+[; ;Tecnica1.h: 53: void tic_timer1(void);
+[; ;Tecnica1.h: 56: void tic_demo_shield2_1(void);
+[; ;Tecnica1.h: 60: void demo_shield2_1_INI(void);
+[; ;Tecnica1.h: 61: void demo_shield2_1(void);
+"18 main.c
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 23: void main(void) {
+[; ;main.c: 18: void main(void) {
 [e :U _main ]
 [f ]
-[; ;main.c: 25: demo_shield2_1_INI();
-"25
-[e ( _demo_shield2_1_INI ..  ]
-[; ;main.c: 27: while(1){
-"27
+[; ;main.c: 20: while(1){
+"20
 [e :U 364 ]
 {
-[; ;main.c: 28: demo_shield2_1();
-"28
-[e ( _demo_shield2_1 ..  ]
-"30
+"23
 }
 [e :U 363 ]
-"27
+"20
 [e $U 364  ]
 [e :U 365 ]
-[; ;main.c: 30: }
-[; ;main.c: 31: }
-"31
+[; ;main.c: 23: }
+[; ;main.c: 24: }
+"24
 [e :UE 362 ]
 }
-[v F3847 `(v ~T0 @X0 1 tf ]
-"33
-[v _myISR `IF3847 ~T0 @X0 1 e ]
+[v F3845 `(v ~T0 @X0 1 tf ]
+"26
+[v _myISR `IF3845 ~T0 @X0 1 e ]
 {
-[; ;main.c: 33: void __interrupt myISR(void){
+[; ;main.c: 26: void __interrupt myISR(void){
 [e :U _myISR ]
 [f ]
-[; ;main.c: 35: if(TMR0IF){
-"35
+[; ;main.c: 28: if(TMR0IF){
+"28
 [e $ ! _TMR0IF 367  ]
 {
-[; ;main.c: 36: INTCONbits.TMR0IF = 0;
-"36
+[; ;main.c: 29: INTCONbits.TMR0IF = 0;
+"29
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 37: TMR0L = 209;
-"37
+[; ;main.c: 30: TMR0L = 209;
+"30
 [e = _TMR0L -> -> 209 `i `uc ]
-[; ;main.c: 38: TMR0H = 0xFF;
-"38
+[; ;main.c: 31: TMR0H = 0xFF;
+"31
 [e = _TMR0H -> -> 255 `i `uc ]
-[; ;main.c: 42: tic_demo_shield2_1();
-"42
-[e ( _tic_demo_shield2_1 ..  ]
-"43
+"36
 }
 [e :U 367 ]
-[; ;main.c: 43: }
-[; ;main.c: 44: }
-"44
+[; ;main.c: 36: }
+[; ;main.c: 37: }
+"37
 [e :UE 366 ]
 }

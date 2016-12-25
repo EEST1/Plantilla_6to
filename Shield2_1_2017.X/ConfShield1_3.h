@@ -27,7 +27,7 @@
 #define DISP3   LATEbits.LATE0
 #define DISP4   LATEbits.LATE1
 #define DOT     LATEbits.LATE2
-
+#define PULSADORES  (PORTD^0xF0)&0xF0    //Nibble superior del puertoD
 
 
 /*Funciones de inicialización ************************************************/

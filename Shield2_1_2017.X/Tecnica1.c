@@ -244,6 +244,7 @@ unsigned char EEread(unsigned char addr) {
     return EEDATA;                // W = EEDATA
     }
 
+#ifdef CONFSHIELD2_1_H
 void demo_shield2_1_INI(void){
     CalculoDeFrecuencia();
     PicIni21();             //inicializa la placa de 6to
@@ -343,3 +344,4 @@ void tic_demo_shield2_1(void){
     tic_debounce();
     tic_LCD();
 }
+#endif
