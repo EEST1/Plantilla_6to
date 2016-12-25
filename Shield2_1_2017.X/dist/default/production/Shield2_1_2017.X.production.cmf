@@ -54,7 +54,7 @@ intcode CODE 0 2008 2008 6 1
 smallconst SMALLCONST 0 2018 2018 52 1
 dataCOMRAM COMRAM 1 45 45 A 1
 bssCOMRAM COMRAM 1 1 1 24 1
-$C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+$C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 200E 200E 4 1
 reset_vec CODE 0 2000 2000 4 1
@@ -108,7 +108,7 @@ MEDIUMCONST 206A-7531 1
 %LINETAB
 $dist/default/production\Shield2_1_2017.X.production.obj
 2008 intcode CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
-2008 intcode CODE >34:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+2008 intcode CODE >33:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 7594 text32 CODE >159:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 7594 text32 CODE >160:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\lcd.c
 7690 text31 CODE >103:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
@@ -126,13 +126,13 @@ $dist/default/production\Shield2_1_2017.X.production.obj
 75D2 text29 CODE >343:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 75D6 text29 CODE >344:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 75DA text29 CODE >345:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
-795C intcode_body CODE >34:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-7996 intcode_body CODE >36:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-799A intcode_body CODE >37:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-799C intcode_body CODE >38:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-79A0 intcode_body CODE >39:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-79A2 intcode_body CODE >43:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-79A6 intcode_body CODE >46:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+795C intcode_body CODE >33:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+7996 intcode_body CODE >35:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+799A intcode_body CODE >36:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+799C intcode_body CODE >37:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A0 intcode_body CODE >38:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A2 intcode_body CODE >42:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+79A6 intcode_body CODE >44:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 7A70 text27 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 7A70 text27 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 7A74 text27 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
@@ -494,36 +494,36 @@ $dist/default/production\Shield2_1_2017.X.production.obj
 7536 text0 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 7536 text0 CODE >28:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 753A text0 CODE >27:C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
-782E cinit CODE >2854:C:\Users\Admin\AppData\Local\Temp\s2tg.
-782E cinit CODE >2856:C:\Users\Admin\AppData\Local\Temp\s2tg.
-782E cinit CODE >2859:C:\Users\Admin\AppData\Local\Temp\s2tg.
-782E cinit CODE >3003:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7830 cinit CODE >3004:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7832 cinit CODE >3005:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7834 cinit CODE >3006:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7836 cinit CODE >3007:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7838 cinit CODE >3008:C:\Users\Admin\AppData\Local\Temp\s2tg.
-783A cinit CODE >3009:C:\Users\Admin\AppData\Local\Temp\s2tg.
-783E cinit CODE >3010:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7842 cinit CODE >3011:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7842 cinit CODE >3012:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7844 cinit CODE >3013:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7848 cinit CODE >3014:C:\Users\Admin\AppData\Local\Temp\s2tg.
-784A cinit CODE >3015:C:\Users\Admin\AppData\Local\Temp\s2tg.
-784C cinit CODE >3016:C:\Users\Admin\AppData\Local\Temp\s2tg.
-784E cinit CODE >3020:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7852 cinit CODE >3021:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7854 cinit CODE >3022:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7854 cinit CODE >3023:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7856 cinit CODE >3024:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7858 cinit CODE >3025:C:\Users\Admin\AppData\Local\Temp\s2tg.
-785A cinit CODE >3031:C:\Users\Admin\AppData\Local\Temp\s2tg.
-785A cinit CODE >3033:C:\Users\Admin\AppData\Local\Temp\s2tg.
-785C cinit CODE >3034:C:\Users\Admin\AppData\Local\Temp\s2tg.
-785E cinit CODE >3036:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7860 cinit CODE >3037:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7862 cinit CODE >3038:C:\Users\Admin\AppData\Local\Temp\s2tg.
-7864 cinit CODE >3039:C:\Users\Admin\AppData\Local\Temp\s2tg.
+782E cinit CODE >2854:C:\Users\Admin\AppData\Local\Temp\s1rk.
+782E cinit CODE >2856:C:\Users\Admin\AppData\Local\Temp\s1rk.
+782E cinit CODE >2859:C:\Users\Admin\AppData\Local\Temp\s1rk.
+782E cinit CODE >3003:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7830 cinit CODE >3004:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7832 cinit CODE >3005:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7834 cinit CODE >3006:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7836 cinit CODE >3007:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7838 cinit CODE >3008:C:\Users\Admin\AppData\Local\Temp\s1rk.
+783A cinit CODE >3009:C:\Users\Admin\AppData\Local\Temp\s1rk.
+783E cinit CODE >3010:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7842 cinit CODE >3011:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7842 cinit CODE >3012:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7844 cinit CODE >3013:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7848 cinit CODE >3014:C:\Users\Admin\AppData\Local\Temp\s1rk.
+784A cinit CODE >3015:C:\Users\Admin\AppData\Local\Temp\s1rk.
+784C cinit CODE >3016:C:\Users\Admin\AppData\Local\Temp\s1rk.
+784E cinit CODE >3020:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7852 cinit CODE >3021:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7854 cinit CODE >3022:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7854 cinit CODE >3023:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7856 cinit CODE >3024:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7858 cinit CODE >3025:C:\Users\Admin\AppData\Local\Temp\s1rk.
+785A cinit CODE >3031:C:\Users\Admin\AppData\Local\Temp\s1rk.
+785A cinit CODE >3033:C:\Users\Admin\AppData\Local\Temp\s1rk.
+785C cinit CODE >3034:C:\Users\Admin\AppData\Local\Temp\s1rk.
+785E cinit CODE >3036:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7860 cinit CODE >3037:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7862 cinit CODE >3038:C:\Users\Admin\AppData\Local\Temp\s1rk.
+7864 cinit CODE >3039:C:\Users\Admin\AppData\Local\Temp\s1rk.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -551,7 +551,7 @@ __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.o
 _tic_LCD 7594 0 CODE 0 text32 dist/default/production\Shield2_1_2017.X.production.obj
 __end_of_write_DATA 7586 0 CODE 0 text16 dist/default/production\Shield2_1_2017.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Shield2_1_2017.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _T1CONbits FCD 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -567,11 +567,11 @@ _RBIE 7F93 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBIF 7F90 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBIP 7F88 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _RBPU 7F8F 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+___sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 _fila 4A 0 COMRAM 1 dataCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _main 7532 0 CODE 0 text0 dist/default/production\Shield2_1_2017.X.production.obj
 btemp 4F 0 COMRAM 1 temp dist/default/production\Shield2_1_2017.X.production.obj
-start 200E 0 CODE 0 init C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+start 200E 0 CODE 0 init C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of___awmod 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -592,11 +592,11 @@ set_CURSOR@posi 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_201
 msg2LCD@datos 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 demo_shield2_1@Desplazar 1A 0 COMRAM 1 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _tic_debounce 75F4 0 CODE 0 text30 dist/default/production\Shield2_1_2017.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-intlevel0 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-intlevel1 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-intlevel2 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-intlevel3 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+__accesstop 60 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+intlevel0 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+intlevel1 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+intlevel2 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+intlevel3 0 0 CODE 0 text C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __end_of_LCD_init 7A70 0 CODE 0 text6 dist/default/production\Shield2_1_2017.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -622,8 +622,8 @@ _ADCON2 FC0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_demo_shield2_1 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 ___awdiv@dividend 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 _EECON1bits FA6 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -712,7 +712,7 @@ __Htext9 0 0 ABS 0 text9 dist/default/production\Shield2_1_2017.X.production.obj
 __end_of_teclas 2025 0 SMALLCONST 0 smallconst dist/default/production\Shield2_1_2017.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Shield2_1_2017.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Shield2_1_2017.X.production.obj
-__smallconst 2018 0 SMALLCONST 0 smallconst C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+__smallconst 2018 0 SMALLCONST 0 smallconst C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\Shield2_1_2017.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\Shield2_1_2017.X.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
@@ -899,8 +899,8 @@ __end_of_write_LCD 7650 0 CODE 0 text22 dist/default/production\Shield2_1_2017.X
 read_BUSY@aux 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_write_CMD 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
 __size_of_write_LCD 0 0 ABS 0 - dist/default/production\Shield2_1_2017.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
-stacklo 67 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s1rk.obj
+stacklo 67 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 __Lintcode 2008 0 CODE 0 intcode dist/default/production\Shield2_1_2017.X.production.obj
 _minimoEncoder 14 0 COMRAM 1 bssCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\Shield2_1_2017.X.production.obj
@@ -973,7 +973,7 @@ __Ltext30 0 0 ABS 0 text30 dist/default/production\Shield2_1_2017.X.production.o
 __Ltext31 0 0 ABS 0 text31 dist/default/production\Shield2_1_2017.X.production.obj
 __Ltext32 0 0 ABS 0 text32 dist/default/production\Shield2_1_2017.X.production.obj
 _transmitir 75A4 0 CODE 0 text13 dist/default/production\Shield2_1_2017.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\Admin\AppData\Local\Temp\s2tg.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Admin\AppData\Local\Temp\s1rk.obj
 ___aldiv@dividend 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Shield2_1_2017.X.production.obj
 __Lpowerup 200E 0 CODE 0 powerup dist/default/production\Shield2_1_2017.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Shield2_1_2017.X.production.obj

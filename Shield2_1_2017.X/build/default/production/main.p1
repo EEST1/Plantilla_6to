@@ -3637,45 +3637,45 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 28: demo_shield2_1();
 "28
 [e ( _demo_shield2_1 ..  ]
-"31
+"30
 }
 [e :U 363 ]
 "27
 [e $U 364  ]
 [e :U 365 ]
+[; ;main.c: 30: }
 [; ;main.c: 31: }
-[; ;main.c: 32: }
-"32
+"31
 [e :UE 362 ]
 }
 [v F3847 `(v ~T0 @X0 1 tf ]
-"34
+"33
 [v _myISR `IF3847 ~T0 @X0 1 e ]
 {
-[; ;main.c: 34: void __interrupt myISR(void){
+[; ;main.c: 33: void __interrupt myISR(void){
 [e :U _myISR ]
 [f ]
-[; ;main.c: 36: if(TMR0IF){
-"36
+[; ;main.c: 35: if(TMR0IF){
+"35
 [e $ ! _TMR0IF 367  ]
 {
-[; ;main.c: 37: INTCONbits.TMR0IF = 0;
-"37
+[; ;main.c: 36: INTCONbits.TMR0IF = 0;
+"36
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 38: TMR0L = 209;
-"38
+[; ;main.c: 37: TMR0L = 209;
+"37
 [e = _TMR0L -> -> 209 `i `uc ]
-[; ;main.c: 39: TMR0H = 0xFF;
-"39
+[; ;main.c: 38: TMR0H = 0xFF;
+"38
 [e = _TMR0H -> -> 255 `i `uc ]
-[; ;main.c: 43: tic_demo_shield2_1();
-"43
+[; ;main.c: 42: tic_demo_shield2_1();
+"42
 [e ( _tic_demo_shield2_1 ..  ]
-"44
+"43
 }
 [e :U 367 ]
+[; ;main.c: 43: }
 [; ;main.c: 44: }
-[; ;main.c: 46: }
-"46
+"44
 [e :UE 366 ]
 }

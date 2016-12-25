@@ -4849,7 +4849,6 @@ demo_shield2_1_INI();
 while(1){
 demo_shield2_1();
 
-
 }
 }
 
@@ -4864,5 +4863,4 @@ TMR0H = 0xFF;
 
 tic_demo_shield2_1();
 }
-
 }

@@ -79,7 +79,7 @@ KB_LIBERA 3
 [v _tic_LCD tic_LCD `(v  1 e 1 0 ]
 "23 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"34
+"33
 [v _myISR myISR `II(v  1 e 1 0 ]
 "14 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _TIMER0_INI TIMER0_INI `(v  1 e 1 0 ]
@@ -757,7 +757,7 @@ KB_LIBERA 3
 "23 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"32
+"31
 } 0
 "247 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _demo_shield2_1_INI demo_shield2_1_INI `(v  1 e 1 0 ]
@@ -972,10 +972,10 @@ KB_LIBERA 3
 [v ___aldiv@divisor divisor `l  1 p 4 20 ]
 "42
 } 0
-"34 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
+"33 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\main.c
 [v _myISR myISR `II(v  1 e 1 0 ]
 {
-"46
+"44
 } 0
 "341 C:\Users\Admin\MPLABXProjects\6to\Plantilla_6to\Shield2_1_2017.X\Tecnica1.c
 [v _tic_demo_shield2_1 tic_demo_shield2_1 `(v  1 e 1 0 ]

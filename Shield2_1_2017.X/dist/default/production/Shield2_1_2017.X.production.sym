@@ -572,7 +572,7 @@ text0 7532 753B CODE 7532 0
 %locals
 dist/default/production\Shield2_1_2017.X.production.obj
 C:\Program Files (x86)\Microchip\xc8\v1.40\include\pic18f4550.h
-C:\Users\Admin\AppData\Local\Temp\s2tg.
+C:\Users\Admin\AppData\Local\Temp\s1rk.
 2854 782E 0 CODE 0
 2856 782E 0 CODE 0
 2859 782E 0 CODE 0
@@ -995,15 +995,15 @@ C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 C:\Program Files (x86)\Microchip\xc8\v1.40\sources\common\aldiv.c
 42 2008 0 CODE 0
 main.c
-34 2008 0 CODE 0
+33 2008 0 CODE 0
 main.c
-34 795C 0 CODE 0
-36 7996 0 CODE 0
-37 799A 0 CODE 0
-38 799C 0 CODE 0
-39 79A0 0 CODE 0
-43 79A2 0 CODE 0
-46 79A6 0 CODE 0
+33 795C 0 CODE 0
+35 7996 0 CODE 0
+36 799A 0 CODE 0
+37 799C 0 CODE 0
+38 79A0 0 CODE 0
+42 79A2 0 CODE 0
+44 79A6 0 CODE 0
 Tecnica1.c
 341 75C4 0 CODE 0
 342 75C4 0 CODE 0
