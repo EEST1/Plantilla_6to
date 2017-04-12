@@ -25,13 +25,4 @@ void main(void) {
 
 void __interrupt myISR(void){
   
-    if(TMR0IF){
-        INTCONbits.TMR0IF = 0;  //borra el flag de la interrupción de timer
-        TMR0L = 209;            //reinicia el timer
-        TMR0H = 0xFF;
- 
-   
-        /*Llamada a funciones TIC 1ms ********************/
-        
-    }   
 }
