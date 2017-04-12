@@ -1,0 +1,759 @@
+Disassembly Listing for probandoboot
+Generated From:
+D:/GIT/Ap_template/probandoboot.X/dist/default/production/probandoboot.X.production.cof
+02/05/2014 11:10:16
+
+---  D:/GIT/Ap_template/probandoboot.X/main.c  ----------------------------------------------------------
+1:             /*
+2:              * File:   main.c
+3:              * Author: Esteban Lemos
+4:              * Created on 5 de febrero de 2014, 20:49
+5:              * En caso de necesitar el proyecto completo ingresar en
+6:              * https://github.com/EEST1/Ap_template/tree/inicializado
+7:              */
+8:             /*
+9:              *Los LEDS  del shield están designados de izquierda a derechacomo LED1, LED2,
+10:             *LED3 y LED4.
+11:             *Los pulsadores de izquierda a derecha como BOT1, BOT2, BOT3, BOT4.
+12:             *Para habilitar los displays de izquierda a derecha DISP1, DISP2, DISP3 y DISP4.
+13:             *Para escribir un dato en el diplay se debe de escirbir en el nible menos
+14:             *significativo del puerto A o usar la función Send_Disp(Nrodedisp , Dato)
+15:             *El punto se controla con la variable DOT.
+16:             */
+17:            
+18:            #include <xc.h>
+19:            #include "confbits.h"   //no se debe de modificar este archivo para
+20:                                    //garantizar el funcionamiento del BOOTLOADER
+21:            #include"Ap_Puertos.h"  //define nombres para la entradas salidas del
+22:                                    //shield
+23:            
+24:            
+25:            # define _XTAL_FREQ  20000000
+26:            
+27:            unsigned char mux_tout = 0; // se declara para ser usada en la multiplexación
+28:                                        // del display
+29:            
+30:            void main(void) {
+31:                //Aquí debemos declarar todas las variables:
+32:                unsigned char a=0,b=1;         //las variables locales deben de ser cargadas
+7E7E  6E16     MOVWF 0x16, ACCESS
+7E80  0E00     MOVLW 0x0
+7E82  6E1F     MOVWF a, ACCESS
+7E84  5016     MOVF 0x16, W, ACCESS
+7E86  6E16     MOVWF 0x16, ACCESS
+7E88  0E01     MOVLW 0x1
+7E8A  6E1E     MOVWF b, ACCESS
+7E8C  5016     MOVF 0x16, W, ACCESS
+33:                unsigned char faon=0,faoff=0;  //con un valor inicial, de lo contrario
+7E8E  6E16     MOVWF 0x16, ACCESS
+7E90  0E00     MOVLW 0x0
+7E92  6E1A     MOVWF faon, ACCESS
+7E94  5016     MOVF 0x16, W, ACCESS
+7E96  6E16     MOVWF 0x16, ACCESS
+7E98  0E00     MOVLW 0x0
+7E9A  6E1B     MOVWF faoff, ACCESS
+7E9C  5016     MOVF 0x16, W, ACCESS
+34:                unsigned char fbon=0,fvel=0;   //contendrán valores aleatorios.
+7E9E  6E16     MOVWF 0x16, ACCESS
+7EA0  0E00     MOVLW 0x0
+7EA2  6E1C     MOVWF fbon, ACCESS
+7EA4  5016     MOVF 0x16, W, ACCESS
+7EA6  6E16     MOVWF 0x16, ACCESS
+7EA8  0E00     MOVLW 0x0
+7EAA  6E1D     MOVWF fvel, ACCESS
+7EAC  5016     MOVF 0x16, W, ACCESS
+35:                unsigned int  velocidad = 100;
+7EAE  0E00     MOVLW 0x0
+7EB0  6E19     MOVWF 0x19, ACCESS
+7EB2  0E64     MOVLW 0x64
+7EB4  6E18     MOVWF velocidad, ACCESS
+36:                pic_ini13();                   //inicializa las ent/salidas del shield 1.3
+7EB6  EC33     CALL 0x7C66, 0
+7EB8  F03E     NOP
+37:                timer_ini13();                 //inicializa el timer para habilitar
+7EBA  EC04     CALL 0x7C08, 0
+7EBC  F03E     NOP
+38:                                               //el multiplexado de displays
+39:                //di();    //descomente esta línea para inhabilitar todas las interrupciones
+40:            
+41:                
+42:                INTCONbits.GIE = 1;    //comente esta línea para inhabilitar todas las int
+7EBE  8EF2     BSF INTCON, 7, ACCESS
+43:                ei();                  //alternativa para habilitar interrupciones
+7EC0  8EF2     BSF INTCON, 7, ACCESS
+44:                T0CONbits.TMR0ON = 1;  //enciendo el time0
+7EC2  8ED5     BSF T0CON, 7, ACCESS
+45:            
+46:                while(1){   //aquí se encuentra el bucle principal
+47:                /* El siguiente es un programa de ejemplo, que utiliza la interrupción
+48:                 * de TIMER0 para multiplexar el display de 7 segmentos y eliminar el 
+49:                 * rebote de los pulsadores. Adicionalmente se observa el uso de la 
+50:                 * función Send_4Disp, que nos permite enviar información sin preocu
+51:                 * parnos de como esta luego llega al display.
+52:                 * Tener en cuenta que para que funcione el ejemplo deben de estar ha_
+53:                 * bilitadas las interrupciones, y se debe de inicializar el Timer tal cual
+54:                 * se muestra en timer_ini13.
+55:                 * */
+56:                    Send_4Disp(a,b,3,4);    //envía los cuatro números al display
+7EC4  C01E     MOVFF b, Cent
+7EC6  F011     NOP
+7EC8  6E16     MOVWF 0x16, ACCESS
+7ECA  0E03     MOVLW 0x3
+7ECC  6E12     MOVWF Dec, ACCESS
+7ECE  5016     MOVF 0x16, W, ACCESS
+7ED0  6E17     MOVWF 0x17, ACCESS
+7ED2  0E04     MOVLW 0x4
+7ED4  6E13     MOVWF Uni, ACCESS
+7ED6  5017     MOVF 0x17, W, ACCESS
+7ED8  501F     MOVF a, W, ACCESS
+7EDA  ECF1     CALL 0x7DE2, 0
+7EDC  F03E     NOP
+57:            
+58:                    // el método utilizado por Send_4Disp(a,b,c,d) requiere que la función
+59:                    //sea llamada antes de que se termine el mux_tout
+60:            
+61:                 //lo siguiente es una prueba de botones 1 y 2
+62:                    if(!BOT1 && a < 9 && faon ==0 && !bot_tout){
+7EDE  B883     BTFSC PORTD, 4, ACCESS
+7EE0  D011     BRA 0x7F04
+7EE2  0E09     MOVLW 0x9
+7EE4  5C1F     SUBWF a, W, ACCESS
+7EE6  B0D8     BTFSC STATUS, 0, ACCESS
+7EE8  D00D     BRA 0x7F04
+7EEA  661A     TSTFSZ faon, ACCESS
+7EEC  D00B     BRA 0x7F04
+7EEE  6622     TSTFSZ bot_tout, ACCESS
+7EF0  D009     BRA 0x7F04
+63:                        a++;
+7EF2  2A1F     INCF a, F, ACCESS
+64:                        faon = 1;
+7EF4  6E16     MOVWF 0x16, ACCESS
+7EF6  0E01     MOVLW 0x1
+7EF8  6E1A     MOVWF faon, ACCESS
+7EFA  5016     MOVF 0x16, W, ACCESS
+65:                        bot_tout = BOT_REL;
+7EFC  6E16     MOVWF 0x16, ACCESS
+7EFE  0E64     MOVLW 0x64
+7F00  6E22     MOVWF bot_tout, ACCESS
+7F02  5016     MOVF 0x16, W, ACCESS
+66:                    }
+67:                    if(BOT1 && faon == 1 && !bot_tout){
+7F04  A883     BTFSS PORTD, 4, ACCESS
+7F06  D00D     BRA 0x7F22
+7F08  041A     DECF faon, W, ACCESS
+7F0A  A4D8     BTFSS STATUS, 2, ACCESS
+7F0C  D00A     BRA 0x7F22
+7F0E  6622     TSTFSZ bot_tout, ACCESS
+7F10  D008     BRA 0x7F22
+68:                        faon=0;
+7F12  6E16     MOVWF 0x16, ACCESS
+7F14  0E00     MOVLW 0x0
+7F16  6E1A     MOVWF faon, ACCESS
+7F18  5016     MOVF 0x16, W, ACCESS
+69:                        bot_tout = BOT_REL;
+7F1A  6E16     MOVWF 0x16, ACCESS
+7F1C  0E64     MOVLW 0x64
+7F1E  6E22     MOVWF bot_tout, ACCESS
+7F20  5016     MOVF 0x16, W, ACCESS
+70:                    }
+71:                    if(!BOT2 && a > 0 && faoff ==0 && !bot_tout){
+7F22  BA83     BTFSC PORTD, 5, ACCESS
+7F24  D010     BRA 0x7F46
+7F26  501F     MOVF a, W, ACCESS
+7F28  B4D8     BTFSC STATUS, 2, ACCESS
+7F2A  D00D     BRA 0x7F46
+7F2C  661B     TSTFSZ faoff, ACCESS
+7F2E  D00B     BRA 0x7F46
+7F30  6622     TSTFSZ bot_tout, ACCESS
+7F32  D009     BRA 0x7F46
+72:                        a--;
+7F34  061F     DECF a, F, ACCESS
+73:                        faoff = 1;
+7F36  6E16     MOVWF 0x16, ACCESS
+7F38  0E01     MOVLW 0x1
+7F3A  6E1B     MOVWF faoff, ACCESS
+7F3C  5016     MOVF 0x16, W, ACCESS
+74:                        bot_tout = BOT_REL;
+7F3E  6E16     MOVWF 0x16, ACCESS
+7F40  0E64     MOVLW 0x64
+7F42  6E22     MOVWF bot_tout, ACCESS
+7F44  5016     MOVF 0x16, W, ACCESS
+75:                    }
+76:                    if(BOT2 && faoff == 1 && !bot_tout){
+7F46  AA83     BTFSS PORTD, 5, ACCESS
+7F48  D00D     BRA 0x7F64
+7F4A  041B     DECF faoff, W, ACCESS
+7F4C  A4D8     BTFSS STATUS, 2, ACCESS
+7F4E  D00A     BRA 0x7F64
+7F50  6622     TSTFSZ bot_tout, ACCESS
+7F52  D008     BRA 0x7F64
+77:                        faoff=0;
+7F54  6E16     MOVWF 0x16, ACCESS
+7F56  0E00     MOVLW 0x0
+7F58  6E1B     MOVWF faoff, ACCESS
+7F5A  5016     MOVF 0x16, W, ACCESS
+78:                        bot_tout = BOT_REL;
+7F5C  6E16     MOVWF 0x16, ACCESS
+7F5E  0E64     MOVLW 0x64
+7F60  6E22     MOVWF bot_tout, ACCESS
+7F62  5016     MOVF 0x16, W, ACCESS
+79:                    }
+80:            //Aquí se pruebam los Botones 3 y 4 mediante una secuiencia de LEDS
+81:                    if(!BOT3 && fbon ==0 && !bot_tout){
+7F64  BC83     BTFSC PORTD, 6, ACCESS
+7F66  D010     BRA 0x7F88
+7F68  661C     TSTFSZ fbon, ACCESS
+7F6A  D00E     BRA 0x7F88
+7F6C  6622     TSTFSZ bot_tout, ACCESS
+7F6E  D00C     BRA 0x7F88
+82:                        b = ~b&(0x01);
+7F70  501E     MOVF b, W, ACCESS
+7F72  0AFF     XORLW 0xFF
+7F74  0B01     ANDLW 0x1
+7F76  6E1E     MOVWF b, ACCESS
+83:                        fbon = 1;
+7F78  6E16     MOVWF 0x16, ACCESS
+7F7A  0E01     MOVLW 0x1
+7F7C  6E1C     MOVWF fbon, ACCESS
+7F7E  5016     MOVF 0x16, W, ACCESS
+84:                        bot_tout = BOT_REL;
+7F80  6E16     MOVWF 0x16, ACCESS
+7F82  0E64     MOVLW 0x64
+7F84  6E22     MOVWF bot_tout, ACCESS
+7F86  5016     MOVF 0x16, W, ACCESS
+85:                    }
+86:                    if(BOT3 && fbon == 1 && !bot_tout){
+7F88  AC83     BTFSS PORTD, 6, ACCESS
+7F8A  D00D     BRA 0x7FA6
+7F8C  041C     DECF fbon, W, ACCESS
+7F8E  A4D8     BTFSS STATUS, 2, ACCESS
+7F90  D00A     BRA 0x7FA6
+7F92  6622     TSTFSZ bot_tout, ACCESS
+7F94  D008     BRA 0x7FA6
+87:                        
+88:                        fbon=0;
+7F96  6E16     MOVWF 0x16, ACCESS
+7F98  0E00     MOVLW 0x0
+7F9A  6E1C     MOVWF fbon, ACCESS
+7F9C  5016     MOVF 0x16, W, ACCESS
+89:                        bot_tout = BOT_REL;
+7F9E  6E16     MOVWF 0x16, ACCESS
+7FA0  0E64     MOVLW 0x64
+7FA2  6E22     MOVWF bot_tout, ACCESS
+7FA4  5016     MOVF 0x16, W, ACCESS
+90:                    }
+91:                    if(!BOT4 && fvel ==0 && !bot_tout){
+7FA6  BE83     BTFSC PORTD, 7, ACCESS
+7FA8  D012     BRA 0x7FCE
+7FAA  661D     TSTFSZ fvel, ACCESS
+7FAC  D010     BRA 0x7FCE
+7FAE  6622     TSTFSZ bot_tout, ACCESS
+7FB0  D00E     BRA 0x7FCE
+92:                        velocidad = velocidad + 100;
+7FB2  0E64     MOVLW 0x64
+7FB4  2418     ADDWF velocidad, W, ACCESS
+7FB6  6E18     MOVWF velocidad, ACCESS
+7FB8  0E00     MOVLW 0x0
+7FBA  2019     ADDWFC 0x19, W, ACCESS
+7FBC  6E19     MOVWF 0x19, ACCESS
+93:                        fvel = 1;
+7FBE  6E16     MOVWF 0x16, ACCESS
+7FC0  0E01     MOVLW 0x1
+7FC2  6E1D     MOVWF fvel, ACCESS
+7FC4  5016     MOVF 0x16, W, ACCESS
+94:                        bot_tout = BOT_REL;
+7FC6  6E16     MOVWF 0x16, ACCESS
+7FC8  0E64     MOVLW 0x64
+7FCA  6E22     MOVWF bot_tout, ACCESS
+7FCC  5016     MOVF 0x16, W, ACCESS
+95:                    }
+96:                    if(BOT4 && fvel == 1 && !bot_tout){
+7FCE  AE83     BTFSS PORTD, 7, ACCESS
+7FD0  D00D     BRA 0x7FEC
+7FD2  041D     DECF fvel, W, ACCESS
+7FD4  A4D8     BTFSS STATUS, 2, ACCESS
+7FD6  D00A     BRA 0x7FEC
+7FD8  6622     TSTFSZ bot_tout, ACCESS
+7FDA  D008     BRA 0x7FEC
+97:            
+98:                        fvel=0;
+7FDC  6E16     MOVWF 0x16, ACCESS
+7FDE  0E00     MOVLW 0x0
+7FE0  6E1D     MOVWF fvel, ACCESS
+7FE2  5016     MOVF 0x16, W, ACCESS
+99:                        bot_tout = BOT_REL;
+7FE4  6E16     MOVWF 0x16, ACCESS
+7FE6  0E64     MOVLW 0x64
+7FE8  6E22     MOVWF bot_tout, ACCESS
+7FEA  5016     MOVF 0x16, W, ACCESS
+100:                   }
+101:           
+102:                   if(b == 0x01) leds(velocidad);
+7FEC  041E     DECF b, W, ACCESS
+103:                   
+104:                   
+105:                   //escriba el código aqui
+106:           
+107:               }
+108:           }
+109:           
+110:           void __interrupt myISR(void){
+2008  CFFA     MOVFF PCLATH, 0x1
+7D66  0006     POP
+7D68  CFE9     MOVFF FSR0L, 0x3
+7D6A  F003     NOP
+7D6C  CFEA     MOVFF FSR0H, 0x4
+7D6E  F004     NOP
+7D70  CFE1     MOVFF FSR1L, 0x5
+7D72  F005     NOP
+7D74  CFE2     MOVFF FSR1H, 0x6
+7D76  F006     NOP
+7D78  CFD9     MOVFF FSR2L, 0x7
+7D7A  F007     NOP
+7D7C  CFDA     MOVFF FSR2H, 0x8
+7D7E  F008     NOP
+7D80  CFF3     MOVFF PRODL, 0x9
+7D82  F009     NOP
+7D84  CFF4     MOVFF PRODH, 0xA
+7D86  F00A     NOP
+7D88  CFF6     MOVFF TBLPTRL, 0xB
+7D8A  F00B     NOP
+7D8C  CFF7     MOVFF TBLPTRH, 0xC
+7D8E  F00C     NOP
+7D90  CFF8     MOVFF TBLPTRU, 0xD
+7D92  F00D     NOP
+7D94  CFF5     MOVFF TABLAT, 0xE
+7D96  F00E     NOP
+111:               /*Aquí se ejecuta el código de las interrupciones que hayan sucedido,
+112:                *por defecto el XC8 entra siempre en esta interrupción denominada de
+113:                *Alta prioridad
+114:                *NO OLVIDES DESCOMENTAR ei(), PARA HABILITAR LAS INTERRUPCIONES
+115:                *
+116:                */
+117:               //el siguiente código verifica que el flag de TIMER0 esté habilitado
+118:               if(TMR0IF){
+7D98  A4F2     BTFSS INTCON, 2, ACCESS
+7D9A  D006     BRA 0x7DA8
+119:                   INTCONbits.TMR0IF = 0;  //borra el flag de la interrupción de timer
+7D9C  94F2     BCF INTCON, 2, ACCESS
+120:                   TMR0L = 0xD9;           //reinicia el time
+7D9E  0ED9     MOVLW 0xD9
+7DA0  6ED6     MOVWF TMR0L, ACCESS
+121:                   TMR0H = 0xFF;
+7DA2  68D7     SETF TMR0H, ACCESS
+122:                   tic_timer0();           //llama a la función tic_timer
+7DA4  EC10     CALL 0x7C20, 0
+7DA6  F03E     NOP
+123:               }
+124:               return;                     //termina el código de interrupción
+125:           }
+7DA8  C00E     MOVFF 0xE, TABLAT
+126:           /*
+127:           
+128:           void interrupt low_priority myLoIsr(void){
+129:                *Aquí se ejecuta el código de las interrupciones que hayan sucedido,
+130:                *si las mismas están marcadas como de BAJA prioridad, por ejemplo si
+131:                *se ejecutan dos interrupciones se atenderá primero la de alta prioridad
+132:                *NO OLVIDES DESCOMENTAR ei(), PARA HABILITAR LAS INTERRUPCIONES
+133:                *
+134:                
+135:               
+136:               return;
+137:               
+138:           }
+139:           */
+---  D:/GIT/Ap_template/probandoboot.X/Ap_ini.c  --------------------------------------------------------
+1:             #include <xc.h>
+2:             #include "Ap_Puertos.h"
+3:             
+4:             
+5:             void pic_ini13(void){
+6:             
+7:                 //Borrado de todos los puertos
+8:                 LATA = 0x00;
+7C66  0E00     MOVLW 0x0
+7C68  6E89     MOVWF LATA, ACCESS
+9:                 LATB = 0x00;
+7C6A  0E00     MOVLW 0x0
+7C6C  6E8A     MOVWF LATB, ACCESS
+10:                LATC = 0x00;
+7C6E  0E00     MOVLW 0x0
+7C70  6E8B     MOVWF LATC, ACCESS
+11:                LATD = 0x00;
+7C72  0E00     MOVLW 0x0
+7C74  6E8C     MOVWF LATD, ACCESS
+12:                LATE = 0x00;
+7C76  0E00     MOVLW 0x0
+7C78  6E8D     MOVWF LATE, ACCESS
+13:            
+14:                PORTA = 0x00;
+7C7A  0E00     MOVLW 0x0
+7C7C  6E80     MOVWF PORTA, ACCESS
+15:                PORTB = 0x00;
+7C7E  0E00     MOVLW 0x0
+7C80  6E81     MOVWF PORTB, ACCESS
+16:                PORTC = 0x00;
+7C82  0E00     MOVLW 0x0
+7C84  6E82     MOVWF PORTC, ACCESS
+17:                PORTD = 0x00;
+7C86  0E00     MOVLW 0x0
+7C88  6E83     MOVWF PORTD, ACCESS
+18:                PORTE = 0x00;
+7C8A  0E00     MOVLW 0x0
+7C8C  6E84     MOVWF PORTE, ACCESS
+19:            
+20:                //LEDS y pulsadores
+21:            
+22:                TRISD = 0xF0;       //RD0 a RD3 salidas RD4 a RD7 entradas
+7C8E  0EF0     MOVLW 0xF0
+7C90  6E95     MOVWF TRISD, ACCESS
+23:                TRISCbits.RC6 = 0;  //RC6 y RC7 salidas
+7C92  9C94     BCF TRISC, 6, ACCESS
+24:                TRISCbits.RC7 = 0;
+7C94  9E94     BCF TRISC, 7, ACCESS
+25:            
+26:                //Display
+27:            
+28:                CMCON = 0x07;       //comparadores de entrada deshabilitados
+7C96  0E07     MOVLW 0x7
+7C98  6EB4     MOVWF CMCON, ACCESS
+29:                ADCON1 = 0x0F;      //Conversores AD deshabilitados
+7C9A  0E0F     MOVLW 0xF
+7C9C  6EC1     MOVWF ADCON1, ACCESS
+30:                TRISA = 0xC0;       //RA1 a RA5 salidas
+7C9E  0EC0     MOVLW 0xC0
+7CA0  6E92     MOVWF TRISA, ACCESS
+31:                TRISE = 0x00;       //RE0 a RE2 salidas el resto no está implementado
+7CA2  0E00     MOVLW 0x0
+7CA4  6E96     MOVWF TRISE, ACCESS
+32:            }
+7CA6  0012     RETURN 0
+33:            
+34:            void timer_ini13(){
+35:                T0CONbits.TMR0ON = 0;   //apago el timer
+7C08  9ED5     BCF T0CON, 7, ACCESS
+36:                T0CONbits.T08BIT = 1;   //selecciono el timer en 8 bits
+7C0A  8CD5     BSF T0CON, 6, ACCESS
+37:                T0CONbits.T0CS = 0;     //el timer cuenta fosc/4
+7C0C  9AD5     BCF T0CON, 5, ACCESS
+38:                T0CONbits.PSA = 0;      //habilito el preescales
+7C0E  96D5     BCF T0CON, 3, ACCESS
+39:                T0CONbits.T0PS0 = 0;    //cargo el preescales con 128
+7C10  90D5     BCF T0CON, 0, ACCESS
+40:                T0CONbits.T0PS1 = 1;
+7C12  82D5     BSF T0CON, 1, ACCESS
+41:                T0CONbits.T0PS2 = 1;
+7C14  84D5     BSF T0CON, 2, ACCESS
+42:                TMR0L = 0xD9;           //el timer contará 39 fosc/4 * 128 = 4992 * 0,2us
+7C16  0ED9     MOVLW 0xD9
+7C18  6ED6     MOVWF TMR0L, ACCESS
+43:                TMR0H = 0xFF;           //en total aprox 0.9984ms  casi 1ms
+7C1A  68D7     SETF TMR0H, ACCESS
+44:                INTCONbits.TMR0IE = 1;  //Habilita la interrupción de timer 0
+7C1C  8AF2     BSF INTCON, 5, ACCESS
+45:            }
+7C1E  0012     RETURN 0
+46:            void leds(unsigned int velocidad){
+47:                static unsigned char i=1;
+48:            
+49:            
+50:                switch(i){
+7CFA  D026     BRA 0x7D48
+7D48  5025     MOVF i, W, ACCESS
+7D4A  0A01     XORLW 0x1
+7D4C  B4D8     BTFSC STATUS, 2, ACCESS
+7D4E  D7D6     BRA 0x7CFC
+7D50  0A03     XORLW 0x3
+7D52  B4D8     BTFSC STATUS, 2, ACCESS
+7D54  D7D9     BRA 0x7D08
+7D56  0A01     XORLW 0x1
+7D58  B4D8     BTFSC STATUS, 2, ACCESS
+7D5A  D7DC     BRA 0x7D14
+7D5C  0A07     XORLW 0x7
+7D5E  B4D8     BTFSC STATUS, 2, ACCESS
+7D60  D7DF     BRA 0x7D20
+7D62  D7E9     BRA 0x7D36
+51:                    case 1:if(!led_tout){
+7CFC  5021     MOVF 0x21, W, ACCESS
+7CFE  1020     IORWF led_tout, W, ACCESS
+7D00  A4D8     BTFSS STATUS, 2, ACCESS
+7D02  D030     BRA 0x7D64
+52:                        LED1=~LED1;
+7D04  7483     BTG PORTD, 2, ACCESS
+7D06  D011     BRA 0x7D2A
+53:                        led_tout = velocidad;
+54:                        i++;
+55:                    }
+56:                    break;
+57:                    case 2:if(!led_tout){
+7D08  5021     MOVF 0x21, W, ACCESS
+7D0A  1020     IORWF led_tout, W, ACCESS
+7D0C  A4D8     BTFSS STATUS, 2, ACCESS
+7D0E  D02A     BRA 0x7D64
+58:                        LED2=~LED2;
+7D10  7683     BTG PORTD, 3, ACCESS
+7D12  D00B     BRA 0x7D2A
+59:                        led_tout = velocidad;
+60:                        i++;
+61:                    }
+62:                    break;
+63:                    case 3:if(!led_tout){
+7D14  5021     MOVF 0x21, W, ACCESS
+7D16  1020     IORWF led_tout, W, ACCESS
+7D18  A4D8     BTFSS STATUS, 2, ACCESS
+7D1A  D024     BRA 0x7D64
+64:                        LED3=~LED3;
+7D1C  7C82     BTG PORTC, 6, ACCESS
+7D1E  D005     BRA 0x7D2A
+65:                        led_tout = velocidad;
+66:                        i++;
+67:                    }
+68:                    break;
+69:                    case 4:if(!led_tout){
+7D20  5021     MOVF 0x21, W, ACCESS
+7D22  1020     IORWF led_tout, W, ACCESS
+7D24  A4D8     BTFSS STATUS, 2, ACCESS
+7D26  D01E     BRA 0x7D64
+70:                        LED4=~LED4;
+7D28  7E82     BTG PORTC, 7, ACCESS
+71:                        led_tout = velocidad;
+7D2A  C00F     MOVFF velocidad, led_tout
+7D2C  F020     NOP
+7D2E  C010     MOVFF NroDisp, 0x21
+7D30  F021     NOP
+72:                        i++;
+7D32  2A25     INCF i, F, ACCESS
+7D34  D017     BRA 0x7D64
+73:                    }
+74:                    break;
+75:                    default : {
+76:                        led_tout = 1000;
+7D36  0E03     MOVLW 0x3
+7D38  6E21     MOVWF 0x21, ACCESS
+7D3A  0EE8     MOVLW 0xE8
+7D3C  6E20     MOVWF led_tout, ACCESS
+77:                        i=1;
+7D3E  6E11     MOVWF Cent, ACCESS
+7D40  0E01     MOVLW 0x1
+7D42  6E25     MOVWF i, ACCESS
+7D44  5011     MOVF Cent, W, ACCESS
+78:                    }
+79:            
+80:                }
+7D46  D00E     BRA 0x7D64
+81:            
+82:            }
+7D64  0012     RETURN 0
+83:            void Send_Disp(unsigned char NroDisp,unsigned char Dato){
+7CA8  CFE8     MOVFF WREG, NroDisp
+7CAA  F010     NOP
+84:            
+85:                LATA = 0;           //Borro el dato
+7CAC  0E00     MOVLW 0x0
+7CAE  6E89     MOVWF LATA, ACCESS
+86:            
+87:                DISP1 = 0;
+7CB0  9889     BCF LATA, 4, ACCESS
+88:                DISP2 = 0;
+7CB2  9A89     BCF LATA, 5, ACCESS
+89:                DISP3 = 0;
+7CB4  908D     BCF LATE, 0, ACCESS
+90:                DISP4 = 0;
+7CB6  928D     BCF LATE, 1, ACCESS
+91:            
+92:                switch(NroDisp){
+7CB8  D008     BRA 0x7CCA
+7CCA  5010     MOVF NroDisp, W, ACCESS
+7CCC  0A01     XORLW 0x1
+7CCE  B4D8     BTFSC STATUS, 2, ACCESS
+7CD0  D7FA     BRA 0x7CC6
+7CD2  0A03     XORLW 0x3
+7CD4  B4D8     BTFSC STATUS, 2, ACCESS
+7CD6  D7F1     BRA 0x7CBA
+7CD8  0A01     XORLW 0x1
+7CDA  B4D8     BTFSC STATUS, 2, ACCESS
+7CDC  D7F0     BRA 0x7CBE
+7CDE  0A07     XORLW 0x7
+7CE0  B4D8     BTFSC STATUS, 2, ACCESS
+7CE2  D7EF     BRA 0x7CC2
+7CE4  D7F0     BRA 0x7CC6
+93:                    case 1:{
+94:                        DISP1 = 1; 
+95:                    }break;
+96:                    case 2: {
+97:                        DISP2 = 1;      
+7CBA  8A89     BSF LATA, 5, ACCESS
+98:                    }break;
+7CBC  D014     BRA 0x7CE6
+99:                    case 3: {
+100:                       DISP3 = 1;
+7CBE  808D     BSF LATE, 0, ACCESS
+101:                   }break;
+7CC0  D012     BRA 0x7CE6
+102:                   case 4: {
+103:                       DISP4 = 1;
+7CC2  828D     BSF LATE, 1, ACCESS
+104:                   }break;
+7CC4  D010     BRA 0x7CE6
+105:                   default :{
+106:                       DISP1 = 1;
+7CC6  8889     BSF LATA, 4, ACCESS
+107:                   }break;
+7CC8  D00E     BRA 0x7CE6
+108:               }
+109:               Dato = Dato & 0x0F;   //borro el nibble superior
+7CE6  500F     MOVF velocidad, W, ACCESS
+7CE8  0B0F     ANDLW 0xF
+7CEA  6E0F     MOVWF velocidad, ACCESS
+110:               LATA = LATA & 0xF0;   //borro el nibble inferior
+7CEC  5089     MOVF LATA, W, ACCESS
+7CEE  0BF0     ANDLW 0xF0
+7CF0  6E89     MOVWF LATA, ACCESS
+111:               LATA = LATA | Dato;   //copio el nibble inferior de Dato en el puerto A
+7CF2  5089     MOVF LATA, W, ACCESS
+7CF4  100F     IORWF velocidad, W, ACCESS
+7CF6  6E89     MOVWF LATA, ACCESS
+112:           }
+2008  CFFA     MOVFF PCLATH, 0x1
+7CF8  0012     RETURN 0
+113:           
+114:           void Send_4Disp(unsigned char Umil,unsigned char Cent,unsigned char Dec,unsigned char Uni){
+7DE2  CFE8     MOVFF WREG, Umil
+7DE4  F015     NOP
+115:           
+116:               static unsigned char Nro_Disp=1;
+117:           
+118:               switch(Nro_Disp){
+7DE6  D03C     BRA 0x7E60
+7E60  5024     MOVF Nro_Disp, W, ACCESS
+7E62  0A01     XORLW 0x1
+7E64  B4D8     BTFSC STATUS, 2, ACCESS
+7E66  D7C0     BRA 0x7DE8
+7E68  0A03     XORLW 0x3
+7E6A  B4D8     BTFSC STATUS, 2, ACCESS
+7E6C  D7CB     BRA 0x7E04
+7E6E  0A01     XORLW 0x1
+7E70  B4D8     BTFSC STATUS, 2, ACCESS
+7E72  D7D6     BRA 0x7E20
+7E74  0A07     XORLW 0x7
+7E76  B4D8     BTFSC STATUS, 2, ACCESS
+7E78  D7E1     BRA 0x7E3C
+7E7A  D7EB     BRA 0x7E52
+119:                   case 1:{
+120:                       if(!mux_tout){
+7DE8  6623     TSTFSZ mux_tout, ACCESS
+7DEA  D048     BRA 0x7E7C
+121:                           Send_Disp(1,Umil);
+7DEC  C015     MOVFF Umil, velocidad
+7DEE  F00F     NOP
+7DF0  0E01     MOVLW 0x1
+7DF2  EC54     CALL 0x7CA8, 0
+7DF4  F03E     NOP
+122:                           mux_tout = MUX_SET;
+7DF6  6E14     MOVWF 0x14, ACCESS
+7DF8  0E0A     MOVLW 0xA
+7DFA  6E23     MOVWF mux_tout, ACCESS
+7DFC  5014     MOVF 0x14, W, ACCESS
+123:                           Nro_Disp = 2;
+7DFE  6E14     MOVWF 0x14, ACCESS
+7E00  0E02     MOVLW 0x2
+7E02  D024     BRA 0x7E4C
+124:                       }
+125:                   }
+126:                   break;
+127:                   case 2:{
+128:                       if(!mux_tout){
+7E04  6623     TSTFSZ mux_tout, ACCESS
+7E06  D03A     BRA 0x7E7C
+129:                           Send_Disp(2,Cent);
+7E08  C011     MOVFF Cent, velocidad
+7E0A  F00F     NOP
+7E0C  0E02     MOVLW 0x2
+7E0E  EC54     CALL 0x7CA8, 0
+7E10  F03E     NOP
+130:                           mux_tout = MUX_SET;
+7E12  6E14     MOVWF 0x14, ACCESS
+7E14  0E0A     MOVLW 0xA
+7E16  6E23     MOVWF mux_tout, ACCESS
+7E18  5014     MOVF 0x14, W, ACCESS
+131:                           Nro_Disp = 3;
+7E1A  6E14     MOVWF 0x14, ACCESS
+7E1C  0E03     MOVLW 0x3
+7E1E  D016     BRA 0x7E4C
+132:                       }
+133:                   }
+134:                   break;
+135:                   case 3:{
+136:                       if(!mux_tout){
+7E20  6623     TSTFSZ mux_tout, ACCESS
+7E22  D02C     BRA 0x7E7C
+137:                           Send_Disp(3,Dec);
+7E24  C012     MOVFF Dec, velocidad
+7E26  F00F     NOP
+7E28  0E03     MOVLW 0x3
+7E2A  EC54     CALL 0x7CA8, 0
+7E2C  F03E     NOP
+138:                           mux_tout = MUX_SET;
+7E2E  6E14     MOVWF 0x14, ACCESS
+7E30  0E0A     MOVLW 0xA
+7E32  6E23     MOVWF mux_tout, ACCESS
+7E34  5014     MOVF 0x14, W, ACCESS
+139:                           Nro_Disp = 4;
+7E36  6E14     MOVWF 0x14, ACCESS
+7E38  0E04     MOVLW 0x4
+7E3A  D008     BRA 0x7E4C
+140:                       }
+141:                   }
+142:                   break;
+143:                   case 4:{
+144:                       if(!mux_tout){
+7E3C  6623     TSTFSZ mux_tout, ACCESS
+7E3E  D01E     BRA 0x7E7C
+145:                           Send_Disp(4,Uni);
+7E40  C013     MOVFF Uni, velocidad
+7E42  F00F     NOP
+7E44  0E04     MOVLW 0x4
+7E46  EC54     CALL 0x7CA8, 0
+7E48  F03E     NOP
+7E4A  D003     BRA 0x7E52
+146:                           mux_tout = MUX_SET;
+147:                           Nro_Disp = 1;
+7E4C  6E24     MOVWF Nro_Disp, ACCESS
+7E4E  5014     MOVF 0x14, W, ACCESS
+7E50  D015     BRA 0x7E7C
+148:                       }
+149:                   }
+150:                   break;
+151:                   default :{
+152:                       mux_tout = MUX_SET;
+7E52  6E14     MOVWF 0x14, ACCESS
+7E54  0E0A     MOVLW 0xA
+7E56  6E23     MOVWF mux_tout, ACCESS
+7E58  5014     MOVF 0x14, W, ACCESS
+153:                       Nro_Disp = 1;
+7E5A  6E14     MOVWF 0x14, ACCESS
+7E5C  0E01     MOVLW 0x1
+7E5E  D7F6     BRA 0x7E4C
+154:                   }
+155:               }
+156:           }
+7E7C  0012     RETURN 0
+157:           void tic_timer0(void){
+158:               if(mux_tout)mux_tout--;
+7C20  5023     MOVF mux_tout, W, ACCESS
+7C22  A4D8     BTFSS STATUS, 2, ACCESS
+7C24  0623     DECF mux_tout, F, ACCESS
+159:               if(bot_tout)bot_tout--;
+7C26  5022     MOVF bot_tout, W, ACCESS
+7C28  A4D8     BTFSS STATUS, 2, ACCESS
+7C2A  0622     DECF bot_tout, F, ACCESS
+160:               if(led_tout)led_tout--;
+7C2C  5021     MOVF 0x21, W, ACCESS
+7C2E  1020     IORWF led_tout, W, ACCESS
+7C30  B4D8     BTFSC STATUS, 2, ACCESS
+7C32  D003     BRA 0x7C3A
+7C34  0620     DECF led_tout, F, ACCESS
+7C36  A0D8     BTFSS STATUS, 0, ACCESS
+7C38  0621     DECF 0x21, F, ACCESS
+161:           }
+7C3A  0012     RETURN 0
