@@ -145,6 +145,32 @@ unsigned char obtener_ADC8(void){
                     
     return ADRESH;
 }
+unsigned int obtener_ADC10(void){
+    unsigned char   GuardoPorta,GuardoTrisa;
+    unsigned int ad_res;
+    GuardoPorta = PORTA;
+    GuardoTrisa = TRISA;
+    
+    TRISAbits.RA0=1;        //RA0 se transforma en AN0
+    ADCON1 = 0x0E;          //selección de entradas analógicas
+                            //canal 0 por defecto
+    ADCON2 = 0xAD;          //configuro ADCON2 para justificacion izquierda
+    ADCON0bits.ADON=1;
+    ADCON0bits.GO=1;        //inicia la conversión
+    
+    while(ADCON0bits.GO);
+    
+    ADCON0bits.ADON=0;      //se apaga el conversor
+    ADCON1 = 0x0F;
+    LATA = GuardoPorta;
+    TRISA = GuardoTrisa;
+    /**********************************************************************/
+    /*Completo los 10 bits (en ad_res)escribiendo los 2 bits mas altos    */
+    /*desplazandolos a izquierda 8 posiciones y agregando el byte inferior*/
+    /**********************************************************************/
+    ad_res =ADRESH; ad_res<<=8; ad_res+=ADRESL;                
+    return ad_res;
+}
 
 void AumentarPeriodo(unsigned char valor){
     if(frecuencia>1){
