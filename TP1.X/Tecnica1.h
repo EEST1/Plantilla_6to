@@ -42,6 +42,7 @@ void USART_INI (void);
 /*Uso de los modulos internos ************************************************/
 void pwm_set(unsigned char periodo, unsigned char duty );
 unsigned char obtener_ADC8(void);
+unsigned int obtener_ADC10(void);
 void informar(const char *dato, char longitud);
 void transmitir(unsigned char Dato);
 
