@@ -45,8 +45,7 @@ unsigned char obtener_ADC8(void);
 unsigned int obtener_ADC10(void);
 void informar(const char *dato, char longitud);
 void transmitir(unsigned char Dato);
-void init_user_chars(void);
-void bargraph(unsigned int );
+
 
 
 /*sincronismo de diversas funciones                                          */
