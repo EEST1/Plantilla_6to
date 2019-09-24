@@ -27,5 +27,10 @@ void ret_HOME(void);				// Ubica el cursor en la primera posición
 void set_CURSOR(unsigned char);     // Ubica el cursor en una posición determinada
 void tic_LCD(void);                 // Esta rutina se llama desde la interrupción de timer de 1mS
 void DesplazarIzquierda(void);
-
+void write_DATA(unsigned char dato);	// Pone señales para escribir dato
+void write_CMD(unsigned char dato);	// Pone señales para escribir comando
+void write_LCD (unsigned char dato);	// Pone byte en el bus 
+void read_BUSY(void);
+void init_user_chars(void);
+void bargraph(unsigned int );
 #endif /* LCD_H */
