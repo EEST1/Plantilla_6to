@@ -17,10 +17,7 @@
 
 unsigned short LCD_tout;								// Contador para decrementar cada 1mS
 
-void write_DATA(unsigned char dato);	// Pone señales para escribir dato
-void write_CMD(unsigned char dato);	// Pone señales para escribir comando
-void write_LCD (unsigned char dato);	// Pone byte en el bus 
-void read_BUSY(void);		// Verifica si terminó la operación en proceso
+		// Verifica si terminó la operación en proceso
 
 // Esta rutina recibe un puntero a char e imprime en el LCD ese string
 
@@ -154,6 +151,50 @@ void read_BUSY(void){
 	RW = FALSE;		// Normaliza las señales
 	BUS_DIR &= SALIDA;	// Hace el bus salida para seguir escribiendo al LCD
 }
+
+void init_user_chars(void) {
+        // Carcateres definidos por suario de 5 x 7 
+        unsigned char i; //variable de cuenta
+        // ** crea un vector de caracteres especiales para las barras  **** 
+        const unsigned char user_char[24] = {
+            0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x00, //caracter 0x00 '|  ' una barra
+            0x14, 0x14, 0x14, 0x14, 0x14, 0x14, 0x14, 0x00, //caracter 0x01 '|| ' dos barras
+            0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x15, 0x00  //caracter 0x02 '|||' tres barras
+        };
+        write_CMD(0x41);//envio a la CGRAM posicion 1 pero deberia ser 0 
+
+        for (i = 0; i < 24; i++) //rellena las filas de la cgram con el vector definido arriba
+            char2LCD(user_char[i]);
+        write_CMD(0x80); //vuelve a DDRAM
+        set_CURSOR(0x00);//vuelve a posicion 1ra fila primer caracter
+    }
+/******************************************************************************
+     *    La funcion bargraph debe recibir un entero en numeo de barras
+     *  se calcula con el valor del AD (entre 0 y 1023) dividido por 21
+     */
+    void bargraph(unsigned int percent) {
+        //' ** Declaro Variables **    
+        int Bars; // Number of full ||| bars to draw.
+        int Balance; //   Balance left after all |||s are drawn.
+        int i; // counting variable
+   
+        Bars = percent / 3;    // cuantas barras completas (de |||) escribo?)
+        Balance = percent % 3; // se necesitan barras parciales?
+        set_CURSOR(0x40);      //   me ubico en la 2da linea primera posicion
+
+        for (i = 0; i < Bars; i++)
+             char2LCD(0x02);
+        switch (Balance) {
+            case 0: char2LCD(' '); //     caso 0: manda un espacio que sirve para borrar el arrastre
+                break;
+            case 1: char2LCD(0x00);//     caso 1: escribe el caracter de una barra
+                break;
+            case 2: char2LCD(0x01);//    caso 2: escribe el caracter de 2 barras
+                break;
+        }
+    }
+
+
 
 // Sólo decrementa una variable si esta está cargada con algún valor
 void tic_LCD(void){
